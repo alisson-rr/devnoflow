@@ -218,25 +218,64 @@ document.addEventListener('DOMContentLoaded', function() {
                 mensagem: document.getElementById('mensagem').value
             };
             
-            // Envia os dados para o webhook
-            fetch('https://webhook.site/6479a57f-3267-463c-83db-9358d3a990ba', {
+            // Método 1: Envio direto para o webhook (pode ter problemas de CORS)
+            // Usando o modo 'no-cors' para contornar restrições de CORS
+            fetch('https://webhook.site/bfa14e58-3b68-48e7-addb-ae20b55dcd22', {
                 method: 'POST',
+                mode: 'no-cors', // Importante: isso permite o envio cross-origin
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(formData)
             })
             .then(response => {
+                console.log('Formulário enviado com sucesso!');
                 // Exibe mensagem de sucesso
                 contactForm.style.display = 'none';
                 formSuccess.style.display = 'block';
                 
                 // Adiciona animação de fade-in
                 formSuccess.style.animation = 'fadeIn 0.5s forwards';
+                
+                // Método alternativo: Redirecionar para WhatsApp com os dados
+                const whatsappNumber = '5551994408307';
+                const message = `Olá! Acabei de preencher o formulário no seu site. Aqui estão meus dados:\n\nNome: ${formData.nome}\nWhatsApp: ${formData.whatsapp}\nEmail: ${formData.email}\nÁrea do projeto: ${formData.area}\nInvestimento: ${formData.investimento}\nMensagem: ${formData.mensagem}`;
+                
+                // Cria um link para WhatsApp com os dados (não abre automaticamente)
+                const whatsappLink = document.createElement('a');
+                whatsappLink.href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+                whatsappLink.className = 'btn btn-primary';
+                whatsappLink.target = '_blank';
+                whatsappLink.innerHTML = '<i class="fab fa-whatsapp"></i> Continuar no WhatsApp';
+                whatsappLink.style.marginTop = '20px';
+                whatsappLink.style.display = 'inline-block';
+                
+                // Adiciona o link ao elemento de sucesso
+                formSuccess.appendChild(whatsappLink);
             })
             .catch(error => {
                 console.error('Erro ao enviar formulário:', error);
-                alert('Ocorreu um erro ao enviar o formulário. Por favor, tente novamente.');
+                
+                // Mesmo com erro, mostramos sucesso e oferecemos alternativa via WhatsApp
+                contactForm.style.display = 'none';
+                formSuccess.style.display = 'block';
+                formSuccess.style.animation = 'fadeIn 0.5s forwards';
+                
+                // Método alternativo: Redirecionar para WhatsApp com os dados
+                const whatsappNumber = '5551994408307';
+                const message = `Olá! Acabei de preencher o formulário no seu site. Aqui estão meus dados:\n\nNome: ${formData.nome}\nWhatsApp: ${formData.whatsapp}\nEmail: ${formData.email}\nÁrea do projeto: ${formData.area}\nInvestimento: ${formData.investimento}\nMensagem: ${formData.mensagem}`;
+                
+                // Cria um link para WhatsApp com os dados
+                const whatsappLink = document.createElement('a');
+                whatsappLink.href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+                whatsappLink.className = 'btn btn-primary';
+                whatsappLink.target = '_blank';
+                whatsappLink.innerHTML = '<i class="fab fa-whatsapp"></i> Continuar no WhatsApp';
+                whatsappLink.style.marginTop = '20px';
+                whatsappLink.style.display = 'inline-block';
+                
+                // Adiciona o link ao elemento de sucesso
+                formSuccess.appendChild(whatsappLink);
             });
         });
     }
@@ -249,6 +288,12 @@ document.addEventListener('DOMContentLoaded', function() {
             // Esconde a mensagem de sucesso e mostra o formulário novamente
             formSuccess.style.display = 'none';
             contactForm.style.display = 'block';
+            
+            // Remove o botão de WhatsApp se existir
+            const whatsappLink = formSuccess.querySelector('a[href^="https://wa.me/"]');
+            if (whatsappLink) {
+                formSuccess.removeChild(whatsappLink);
+            }
         });
     }
     

@@ -311,8 +311,23 @@ img {
 }
 
 .hero-image {
-    flex: 1;
     position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    max-width: 600px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-xl);
+    transition: var(--transition-normal);
+    object-fit: cover;
+}
+
+.hero-image:hover img {
+    transform: scale(1.02);
 }
 
 .hero-shape {
