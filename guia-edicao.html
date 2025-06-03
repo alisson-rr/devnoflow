@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Edição - Landing Page</title>
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #9747FF;
+            border-bottom: 2px solid #9747FF;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #9747FF;
+            margin-top: 30px;
+        }
+        code {
+            background-color: #f5f5f5;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        pre {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .tip {
+            background-color: #f0f8ff;
+            border-left: 4px solid #9747FF;
+            padding: 10px 15px;
+            margin: 20px 0;
+        }
+        .warning {
+            background-color: #fff8f0;
+            border-left: 4px solid #FFB547;
+            padding: 10px 15px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Guia de Edição - Landing Page</h1>
+    
+    <p>Este guia explica como editar facilmente sua landing page sem precisar de conhecimentos avançados de programação.</p>
+    
+    <h2>Estrutura de Arquivos</h2>
+    <ul>
+        <li><code>index.html</code> - Arquivo principal com todo o conteúdo da página</li>
+        <li><code>css/styles.css</code> - Estilos visuais (cores, tamanhos, espaçamentos)</li>
+        <li><code>js/main.js</code> - Funcionalidades interativas (slider, formulário, menu mobile)</li>
+        <li><code>assets/</code> - Pasta com todas as imagens</li>
+    </ul>
+    
+    <h2>Como Editar Textos</h2>
+    <p>Para alterar qualquer texto da landing page:</p>
+    <ol>
+        <li>Abra o arquivo <code>index.html</code> em qualquer editor de texto (Notepad, VS Code, etc.)</li>
+        <li>Localize o texto que deseja alterar</li>
+        <li>Substitua o texto mantendo as tags HTML que o envolvem</li>
+    </ol>
+    
+    <div class="tip">
+        <strong>Dica:</strong> Use a função de busca (Ctrl+F) para encontrar rapidamente o texto que deseja editar.
+    </div>
+    
+    <h3>Exemplo:</h3>
+    <p>Para alterar o título principal "TRANSFORME SUA IDEIA EM UM PRODUTO DIGITAL REAL", localize:</p>
+    <pre>&lt;h1&gt;TRANSFORME SUA IDEIA EM UM PRODUTO DIGITAL REAL&lt;/h1&gt;</pre>
+    <p>E substitua por:</p>
+    <pre>&lt;h1&gt;SEU NOVO TÍTULO AQUI&lt;/h1&gt;</pre>
+    
+    <h2>Como Alterar Imagens</h2>
+    <p>Você pode substituir as imagens de duas maneiras:</p>
+    
+    <h3>Método 1: Substituir os arquivos (mais fácil)</h3>
+    <ol>
+        <li>Prepare sua nova imagem com o mesmo nome do arquivo original</li>
+        <li>Substitua o arquivo na pasta <code>assets/</code> ou <code>assets/testimonials/</code></li>
+    </ol>
+    
+    <h3>Método 2: Alterar o caminho no HTML</h3>
+    <ol>
+        <li>Adicione sua nova imagem à pasta <code>assets/</code></li>
+        <li>No arquivo <code>index.html</code>, localize a tag <code>&lt;img&gt;</code> da imagem que deseja substituir</li>
+        <li>Altere o atributo <code>src</code> para apontar para sua nova imagem</li>
+    </ol>
+    
+    <h3>Exemplo:</h3>
+    <pre>&lt;img src="assets/minhafoto.jpg" alt="Alisson Rosa - Desenvolvedor"&gt;</pre>
+    <p>Altere para:</p>
+    <pre>&lt;img src="assets/nova-foto.jpg" alt="Alisson Rosa - Desenvolvedor"&gt;</pre>
+    
+    <h2>Como Alterar Cores</h2>
+    <p>Todas as cores principais estão definidas como variáveis no início do arquivo CSS:</p>
+    <ol>
+        <li>Abra o arquivo <code>css/styles.css</code></li>
+        <li>Localize a seção <code>:root</code> no início do arquivo</li>
+        <li>Altere os valores das variáveis para suas cores desejadas</li>
+    </ol>
+    
+    <h3>Exemplo:</h3>
+    <pre>:root {
+    --accent: #9747FF; /* Cor principal/destaque */
+    --bg-dark: #0F0F12; /* Cor de fundo escura */
+    /* outras variáveis... */
+}</pre>
+    
+    <div class="tip">
+        <strong>Dica:</strong> Use um seletor de cores online como <a href="https://htmlcolorcodes.com/" target="_blank">HTML Color Codes</a> para encontrar códigos de cores.
+    </div>
+    
+    <h2>Como Editar o Formulário</h2>
+    <p>Para modificar os campos do formulário:</p>
+    <ol>
+        <li>Localize a seção <code>&lt;section id="formulario-contato"&gt;</code> no arquivo <code>index.html</code></li>
+        <li>Dentro da tag <code>&lt;form&gt;</code>, você pode:</li>
+        <ul>
+            <li>Adicionar novos campos copiando e modificando os existentes</li>
+            <li>Remover campos que não deseja</li>
+            <li>Alterar os textos dos rótulos (labels)</li>
+            <li>Modificar as opções do dropdown</li>
+        </ul>
+    </ol>
+    
+    <div class="warning">
+        <strong>Importante:</strong> Se você estiver integrando com um serviço de envio de formulário real, precisará editar também o arquivo <code>js/main.js</code> na seção "4. FORMULÁRIO DE CONTATO".
+    </div>
+    
+    <h2>Como Editar os Depoimentos</h2>
+    <p>Para adicionar, remover ou modificar depoimentos:</p>
+    <ol>
+        <li>Localize a seção <code>&lt;section id="depoimentos"&gt;</code> no arquivo <code>index.html</code></li>
+        <li>Cada depoimento está dentro de um elemento <code>&lt;div class="testimonial-slide"&gt;</code></li>
+        <li>Para adicionar um novo depoimento, duplique um dos blocos existentes e altere o conteúdo</li>
+        <li>Para remover um depoimento, exclua o bloco <code>&lt;div class="testimonial-slide"&gt;</code> correspondente</li>
+        <li>Lembre-se de atualizar os "dots" de navegação para corresponder ao número de depoimentos</li>
+    </ol>
+    
+    <h2>Publicação</h2>
+    <p>Para publicar sua landing page:</p>
+    <ol>
+        <li>Faça upload de todos os arquivos e pastas para seu servidor web ou serviço de hospedagem</li>
+        <li>Mantenha a mesma estrutura de pastas</li>
+        <li>O arquivo <code>index.html</code> deve estar na raiz</li>
+    </ol>
+    
+    <div class="tip">
+        <strong>Dica:</strong> Serviços como GitHub Pages, Netlify ou Vercel permitem publicar sites estáticos gratuitamente e com facilidade.
+    </div>
+    
+    <h2>Suporte</h2>
+    <p>Se precisar de ajuda adicional ou tiver dúvidas sobre como editar sua landing page, entre em contato.</p>
+    
+    <hr>
+    <p style="text-align: center; margin-top: 40px;">© 2025 - Todos os direitos reservados</p>
+</body>
+</html>
