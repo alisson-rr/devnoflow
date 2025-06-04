@@ -237,21 +237,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Adiciona animação de fade-in
                 formSuccess.style.animation = 'fadeIn 0.5s forwards';
                 
-                // Método alternativo: Redirecionar para WhatsApp com os dados
-                const whatsappNumber = '5551994408307';
-                const message = `Olá! Acabei de preencher o formulário no seu site. Aqui estão meus dados:\n\nNome: ${formData.nome}\nWhatsApp: ${formData.whatsapp}\nEmail: ${formData.email}\nÁrea do projeto: ${formData.area}\nInvestimento: ${formData.investimento}\nMensagem: ${formData.mensagem}`;
-                
-                // Cria um link para WhatsApp com os dados (não abre automaticamente)
-                const whatsappLink = document.createElement('a');
-                whatsappLink.href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
-                whatsappLink.className = 'btn btn-primary';
-                whatsappLink.target = '_blank';
-                whatsappLink.innerHTML = '<i class="fab fa-whatsapp"></i> Continuar no WhatsApp';
-                whatsappLink.style.marginTop = '20px';
-                whatsappLink.style.display = 'inline-block';
-                
-                // Adiciona o link ao elemento de sucesso
-                formSuccess.appendChild(whatsappLink);
             })
             .catch(error => {
                 console.error('Erro ao enviar formulário:', error);
