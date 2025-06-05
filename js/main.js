@@ -213,16 +213,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 nome: document.getElementById('nome').value,
                 whatsapp: document.getElementById('whatsapp').value,
                 email: document.getElementById('email').value,
-                area: document.getElementById('area').value,
                 investimento: document.getElementById('investimento').value,
                 mensagem: document.getElementById('mensagem').value
             };
             
             // Método 1: Envio direto para o webhook (pode ter problemas de CORS)
             // Usando o modo 'no-cors' para contornar restrições de CORS
-            fetch('https://webhook.site/bfa14e58-3b68-48e7-addb-ae20b55dcd22', {
+            fetch('https://licit-31755.bubbleapps.io/version-test/api/1.1/wf/devnoflow', {
                 method: 'POST',
-                mode: 'no-cors', // Importante: isso permite o envio cross-origin
                 headers: {
                     'Content-Type': 'application/json',
                 },
@@ -248,7 +246,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Método alternativo: Redirecionar para WhatsApp com os dados
                 const whatsappNumber = '5551994408307';
-                const message = `Olá! Acabei de preencher o formulário no seu site. Aqui estão meus dados:\n\nNome: ${formData.nome}\nWhatsApp: ${formData.whatsapp}\nEmail: ${formData.email}\nÁrea do projeto: ${formData.area}\nInvestimento: ${formData.investimento}\nMensagem: ${formData.mensagem}`;
+                const message = `Olá! Acabei de preencher o formulário no seu site. Aqui estão meus dados:\n\nNome: ${formData.nome}\nWhatsApp: ${formData.whatsapp}\nEmail: ${formData.email}\nInvestimento: ${formData.investimento}\nMensagem: ${formData.mensagem}`;
                 
                 // Cria um link para WhatsApp com os dados
                 const whatsappLink = document.createElement('a');
