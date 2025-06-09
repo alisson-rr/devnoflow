@@ -228,6 +228,10 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .then(response => {
                 console.log('Formulário enviado com sucesso!');
+                //dispara o evento de conversão
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-16613367170/tQ_LCO_spNQBEIK77_E9'
+                });
                 // Exibe mensagem de sucesso
                 contactForm.style.display = 'none';
                 formSuccess.style.display = 'block';
