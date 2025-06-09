@@ -250,7 +250,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Método alternativo: Redirecionar para WhatsApp com os dados
                 const whatsappNumber = '5551994408307';
-                const message = `Olá! Acabei de preencher o formulário no seu site. Aqui estão meus dados:\n\nNome: ${formData.nome}\nWhatsApp: ${formData.whatsapp}\nEmail: ${formData.email}\nInvestimento: ${formData.investimento}\nMensagem: ${formData.mensagem}`;
+                const message = `Olá! Acabei de preencher o formulário no seu site. Aqui estão meus dados:\n\nNome: ${formData.nome}\nWhatsApp: ${formData.whatsapp}\nEmail: ${formData.email}\nMensagem: ${formData.mensagem}`;
                 
                 // Cria um link para WhatsApp com os dados
                 const whatsappLink = document.createElement('a');
