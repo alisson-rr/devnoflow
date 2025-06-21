@@ -1,4 +1,69 @@
-/* ... (código CSS anterior) ... */
+/* ===== 1. VARIÁVEIS E RESET (DA SUA LP) ===== */
+:root {
+    --bg-dark: #0F0F12;
+    --bg-darker: #09090B;
+    --text-primary: #F8F8F8;
+    --text-secondary: #A0A0A0;
+    --accent: #9747FF;
+    --accent-light: #B47FFF;
+    --border: #2A2A30;
+    --warning: #FFB547;
+    
+    --gradient-primary: linear-gradient(to right, #9747FF, #FF47B7, #FF9F47);
+    
+    --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 15px 25px rgba(0, 0, 0, 0.1);
+    
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+    
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-xxl: 5rem;
+    
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 1rem;
+    --radius-xl: 2rem;
+    --radius-full: 9999px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--bg-dark); /* Fundo da sua LP */
+    color: var(--text-primary);
+    min-height: 100vh;
+    padding: var(--spacing-lg);
+    display: flex; /* Para centralizar o conteúdo verticalmente */
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%; /* Garante que o container ocupe a largura máxima permitida */
+}
+
+.profile-section {
+    margin-bottom: var(--spacing-lg);
+    animation: fadeInUp var(--transition-normal) ease-out;
+}
 
 .profile-image {
     width: 120px;
@@ -11,13 +76,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* Removido font-size e color daqui, pois agora é uma imagem */
     position: relative;
     overflow: hidden;
     transition: all var(--transition-normal) ease; /* Transição para hover */
 }
 
-.profile-image img { /* NOVO ESTILO PARA A IMAGEM */
+.profile-image img { /* ESTILO PARA A IMAGEM DENTRO DO CÍRCULO */
     width: 100%;
     height: 100%;
     object-fit: cover; /* Garante que a imagem preencha o círculo sem distorcer */
@@ -37,4 +101,217 @@
     animation: shimmer 3s infinite;
 }
 
-/* ... (restante do código CSS) ... */
+@keyframes shimmer {
+    0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+    100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+}
+
+.name {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: var(--spacing-xs);
+    background: var(--gradient-primary); /* Gradiente da sua LP */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.title {
+    font-size: 16px;
+    color: var(--text-secondary); /* Cor de texto secundário da sua LP */
+    margin-bottom: var(--spacing-md);
+}
+
+.description {
+    font-size: 14px;
+    color: var(--text-secondary); /* Cor de texto secundário da sua LP */
+    line-height: 1.5;
+    margin-bottom: var(--spacing-lg);
+}
+
+.service-highlight {
+    background: rgba(151, 71, 255, 0.1); /* Fundo com transparência da cor de destaque */
+    border: 1px solid var(--border); /* Borda da sua LP */
+    border-radius: var(--radius-lg); /* Bordas arredondadas da sua LP */
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    animation: fadeInUp var(--transition-normal) ease-out 0.2s both;
+}
+
+.service-icon {
+    font-size: 32px;
+    color: var(--accent); /* Cor de destaque da sua LP */
+    margin-bottom: var(--spacing-sm);
+}
+
+.service-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-primary);
+}
+
+.service-description {
+    font-size: 14px;
+    color: var(--text-secondary); /* Cor de texto secundário da sua LP */
+    line-height: 1.4;
+}
+
+.links-section {
+    margin-bottom: var(--spacing-lg);
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    color: var(--accent); /* Cor de destaque da sua LP */
+    animation: fadeInUp var(--transition-normal) ease-out 0.4s both;
+}
+
+.link-item {
+    display: block;
+    background-color: var(--bg-darker); /* Fundo mais escuro da sua LP */
+    border: 1px solid var(--border); /* Borda da sua LP */
+    border-radius: var(--radius-md); /* Bordas arredondadas da sua LP */
+    padding: 16px 20px;
+    margin-bottom: var(--spacing-sm);
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: all var(--transition-normal) ease;
+    backdrop-filter: blur(5px); /* Efeito de blur mais sutil */
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp var(--transition-normal) ease-out calc(0.6s + var(--delay)) both;
+}
+
+.link-item:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent); /* Borda com a cor de destaque */
+    box-shadow: 0 8px 25px rgba(151, 71, 255, 0.15); /* Sombra com a cor de destaque */
+}
+
+/* Efeito de brilho ao passar o mouse */
+.link-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(151, 71, 255, 0.1), transparent); /* Gradiente com a cor de destaque */
+    transition: left var(--transition-normal) ease;
+}
+
+.link-item:hover::before {
+    left: 100%;
+}
+
+.link-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.link-left {
+    display: flex;
+    align-items: center;
+}
+
+.link-icon {
+    font-size: 20px;
+    margin-right: var(--spacing-sm);
+    color: var(--accent); /* Cor de destaque da sua LP */
+    width: 24px;
+    text-align: center;
+}
+
+.link-text {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.link-arrow {
+    font-size: 16px;
+    color: var(--accent); /* Cor de destaque da sua LP */
+    transition: transform var(--transition-normal) ease;
+}
+
+.link-item:hover .link-arrow {
+    transform: translateX(4px);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+    animation: fadeInUp var(--transition-normal) ease-out 1.2s both;
+}
+
+.social-link {
+    width: 50px;
+    height: 50px;
+    border-radius: var(--radius-full);
+    background-color: var(--bg-darker); /* Fundo mais escuro da sua LP */
+    border: 1px solid var(--border); /* Borda da sua LP */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--accent); /* Cor de destaque da sua LP */
+    font-size: 20px;
+    transition: all var(--transition-normal) ease;
+}
+
+.social-link:hover {
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 10px 20px rgba(151, 71, 255, 0.2); /* Sombra com a cor de destaque */
+    border-color: var(--accent); /* Borda com a cor de destaque */
+}
+
+.footer {
+    margin-top: var(--spacing-lg);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid rgba(42, 42, 48, 0.5); /* Borda sutil */
+    animation: fadeInUp var(--transition-normal) ease-out 1.4s both;
+}
+
+.footer-text {
+    font-size: 12px;
+    color: var(--text-secondary); /* Cor de texto secundário da sua LP */
+}
+
+/* Animação de fade-in (da sua LP) */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+    
+    .profile-image {
+        width: 100px;
+        height: 100px;
+        font-size: 40px;
+    }
+    
+    .name {
+        font-size: 24px;
+    }
+
+    body {
+        padding: var(--spacing-md);
+    }
+}
