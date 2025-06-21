@@ -1,0 +1,40 @@
+/* ... (código CSS anterior) ... */
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: var(--radius-full);
+    margin: 0 auto var(--spacing-md);
+    border: 4px solid var(--accent); /* Borda com a cor de destaque */
+    box-shadow: 0 0 30px rgba(151, 71, 255, 0.3); /* Sombra com a cor de destaque */
+    background: var(--gradient-primary); /* Gradiente da sua LP */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Removido font-size e color daqui, pois agora é uma imagem */
+    position: relative;
+    overflow: hidden;
+    transition: all var(--transition-normal) ease; /* Transição para hover */
+}
+
+.profile-image img { /* NOVO ESTILO PARA A IMAGEM */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem preencha o círculo sem distorcer */
+    border-radius: var(--radius-full); /* Mantém a imagem circular */
+    display: block; /* Remove espaço extra abaixo da imagem */
+}
+
+/* Efeito de shimmer (adaptado para as cores da LP) */
+.profile-image::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.15), transparent);
+    animation: shimmer 3s infinite;
+}
+
+/* ... (restante do código CSS) ... */

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevNoFlow - Alisson</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon adicionado aqui, apontando para a raiz -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/> 
+</head>
+<body>
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <div class="profile-image">
+                <!-- Sua foto adicionada aqui! -->
+                <img src="assets/minhafoto.jpg" alt="Alisson - DevNoFlow">
+            </div>
+            <h1 class="name">Alisson</h1>
+            <p class="title">DevNoFlow: SaaS & MicroSaaS Developer</p>
+            <p class="description">Tirando ideias do papel e transformando em produtos digitais que geram resultado. Foco em MVP e validação rápida.</p>
+        </div>
+
+        <!-- Service Highlight -->
+        <div class="service-highlight">
+            <div class="service-icon">
+                <i class="fas fa-rocket"></i>
+            </div>
+            <h3 class="service-title">Sua ideia no ar em semanas!</h3>
+            <p class="service-description">Especializado em No-Code/Low-Code para construir soluções SaaS e MicroSaaS do zero, com foco em performance e escalabilidade.</p>
+        </div>
+
+        <!-- Main Links -->
+        <div class="links-section">
+            <h2 class="section-title">Serviços & Contato</h2>
+            
+            <a href="https://wa.me/5551994408307" target="_blank" class="link-item" style="--delay: 0s">
+                <div class="link-content">
+                    <div class="link-left">
+                        <i class="fab fa-whatsapp link-icon"></i>
+                        <span class="link-text">Fale Comigo no WhatsApp</span>
+                    </div>
+                    <i class="fas fa-arrow-right link-arrow"></i>
+                </div>
+            </a>
+
+            <a href="#formulario-contato" class="link-item" style="--delay: 0.1s">
+                <div class="link-content">
+                    <div class="link-left">
+                        <i class="fas fa-handshake link-icon"></i>
+                        <span class="link-text">Quero tirar minha ideia do papel</span>
+                    </div>
+                    <i class="fas fa-arrow-right link-arrow"></i>
+                </div>
+            </a>
+
+            <a href="#" class="link-item" style="--delay: 0.2s">
+                <div class="link-content">
+                    <div class="link-left">
+                        <i class="fas fa-briefcase link-icon"></i>
+                        <span class="link-text">Meu Portfólio (em breve )</span>
+                    </div>
+                    <i class="fas fa-arrow-right link-arrow"></i>
+                </div>
+            </a>
+        </div>
+
+        <!-- Content Links -->
+        <div class="links-section">
+            <h2 class="section-title">Conteúdo & Comunidade</h2>
+            
+            <a href="#" class="link-item" style="--delay: 0.3s">
+                <div class="link-content">
+                    <div class="link-left">
+                        <i class="fas fa-envelope-open-text link-icon"></i>
+                        <span class="link-text">Assine a Newsletter DevNoFlow</span>
+                    </div>
+                    <i class="fas fa-arrow-right link-arrow"></i>
+                </div>
+            </a>
+
+            <a href="https://www.instagram.com/devnoflow" target="_blank" class="link-item" style="--delay: 0.4s">
+                <div class="link-content">
+                    <div class="link-left">
+                        <i class="fab fa-instagram link-icon"></i>
+                        <span class="link-text">Instagram DevNoFlow</span>
+                    </div>
+                    <i class="fas fa-arrow-right link-arrow"></i>
+                </div>
+            </a>
+
+            <a href="#" class="link-item" style="--delay: 0.5s">
+                <div class="link-content">
+                    <div class="link-left">
+                        <i class="fab fa-youtube link-icon"></i>
+                        <span class="link-text">Canal no YouTube (em breve )</span>
+                    </div>
+                    <i class="fas fa-arrow-right link-arrow"></i>
+                </div>
+            </a>
+
+            <a href="#" class="link-item" style="--delay: 0.6s">
+                <div class="link-content">
+                    <div class="link-left">
+                        <i class="fab fa-tiktok link-icon"></i>
+                        <span class="link-text">TikTok (em breve)</span>
+                    </div>
+                    <i class="fas fa-arrow-right link-arrow"></i>
+                </div>
+            </a>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/alisson-rosa-dev/" target="_blank" class="social-link" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/alissonrosa" target="_blank" class="social-link" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:contato@alissonrosa.com" class="social-link" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p class="footer-text">© 2025 DevNoFlow. Todos os direitos reservados.</p>
+        </div>
+    </div>
+
+    <script>
+        // Animações e interações
+        document.addEventListener('DOMContentLoaded', function( ) {
+            // Efeito de hover na imagem de perfil
+            const profileImageContainer = document.querySelector('.profile-image');
+            if (profileImageContainer) {
+                profileImageContainer.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.05) rotate(3deg)';
+                    this.style.boxShadow = '0 0 40px rgba(151, 71, 255, 0.4)';
+                });
+                profileImageContainer.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1) rotate(0deg)';
+                    this.style.boxShadow = '0 0 30px rgba(151, 71, 255, 0.3)';
+                });
+            }
+
+            // Animação de scroll (sutil) - Mantido para um toque extra
+            window.addEventListener('scroll', function() {
+                const scrolled = window.pageYOffset;
+                const profileSection = document.querySelector('.profile-section');
+                if (profileSection) {
+                    const speed = scrolled * 0.05; // Velocidade reduzida para ser mais sutil
+                    profileSection.style.transform = `translateY(${speed}px)`;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
