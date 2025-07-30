@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento de Projeto</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        :root {
+            --bg-color: #121212;
+            --primary-color: #A855F7;
+            --secondary-color: #F97316;
+            --text-color: #E0E0E0;
+            --muted-text-color: #A0A0A0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .feature-card, .tech-card {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover, .tech-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .lucide {
+            width: 32px;
+            height: 32px;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+                color: black;
+            }
+            .no-print {
+                display: none;
+            }
+            header, section, footer {
+                page-break-inside: avoid;
+            }
+             #budget-content {
+                transform: scale(0.95);
+                transform-origin: top left;
+             }
+        }
+
+    </style>
+</head>
+<body class="bg-[#121212]">
+
+    <div id="budget-content" class="max-w-5xl mx-auto p-4 sm:p-8">
+        <header class="flex justify-between items-center py-6 border-b border-gray-700/50">
+            <div>
+                <img src="https://finscale.com.br/wp-content/uploads/2024/06/logotipobranco-1.svg" alt="Logo Cliente Finscale" class="h-8">
+            </div>
+            <div>
+                <img src="https://devnoflow.com.br/images/2.png?_wwcv=12" alt="Logo Projeto Dev no Flow" class="h-12">
+            </div>
+        </header>
+
+        <main class="py-12 sm:py-16">
+            <section class="text-center mb-16 animate-on-scroll">
+                <h1 class="text-4xl sm:text-5xl font-bold gradient-text mb-4">Orçamento do Projeto</h1>
+                <p class="text-lg text-[#A0A0A0]">Proposta de desenvolvimento de sistema web.</p>
+            </section>
+
+            <section class="mb-16 animate-on-scroll">
+                <h2 class="text-2xl sm:text-3xl font-semibold mb-6 border-l-4 border-[#A855F7] pl-4">Descrição do Projeto</h2>
+                <p class="text-[#E0E0E0] leading-relaxed">
+                    Este projeto consiste na criação de uma plataforma web completa e intuitiva, projetada para otimizar a gestão interna. A solução contará com um sistema de autenticação seguro, um dashboard centralizado para visualização de dados, integração com outras ferramentas, um sistema de notificações, gerenciamento de membros e um painel administrativo robusto para controle total das funcionalidades.
+                </p>
+            </section>
+
+            <section class="mb-16 animate-on-scroll">
+                <h2 class="text-2xl sm:text-3xl font-semibold mb-8 text-center">Funcionalidades Incluídas</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="feature-card p-6 rounded-xl text-center">
+                        <i data-lucide="log-in" class="lucide mx-auto mb-4 text-[#A855F7]"></i>
+                        <h3 class="font-semibold text-lg text-[#E0E0E0]">Página de Login</h3>
+                    </div>
+                    <div class="feature-card p-6 rounded-xl text-center">
+                        <i data-lucide="layout-dashboard" class="lucide mx-auto mb-4 text-[#A855F7]"></i>
+                        <h3 class="font-semibold text-lg text-[#E0E0E0]">Dashboard</h3>
+                    </div>
+                    <div class="feature-card p-6 rounded-xl text-center">
+                        <i data-lucide="layers" class="lucide mx-auto mb-4 text-[#A855F7]"></i>
+                        <h3 class="font-semibold text-lg text-[#E0E0E0]">Páginas Integradas</h3>
+                    </div>
+                    <div class="feature-card p-6 rounded-xl text-center">
+                        <i data-lucide="bell" class="lucide mx-auto mb-4 text-[#A855F7]"></i>
+                        <h3 class="font-semibold text-lg text-[#E0E0E0]">Página de Avisos</h3>
+                    </div>
+                    <div class="feature-card p-6 rounded-xl text-center">
+                        <i data-lucide="users" class="lucide mx-auto mb-4 text-[#A855F7]"></i>
+                        <h3 class="font-semibold text-lg text-[#E0E0E0]">Página de Membros</h3>
+                    </div>
+                    <div class="feature-card p-6 rounded-xl text-center">
+                        <i data-lucide="sliders-horizontal" class="lucide mx-auto mb-4 text-[#A855F7]"></i>
+                        <h3 class="font-semibold text-lg text-[#E0E0E0]">Painel Administrativo</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-16 animate-on-scroll">
+                <h2 class="text-2xl sm:text-3xl font-semibold mb-8 text-center">Tecnologia Utilizada</h2>
+                    <div class="tech-card p-6 rounded-xl text-center">
+                        <i data-lucide="code" class="lucide mx-auto mb-4 text-[#F97316]"></i>
+                        <h3 class="font-semibold text-lg text-[#E0E0E0]">Bubble</h3>
+                    </div> 
+            </section>
+
+            <section class="animate-on-scroll">
+                <div class="bg-gray-800/50 border border-[#A855F7] rounded-xl p-8 flex flex-col sm:flex-row justify-between items-center gap-6">
+                    <div class="text-center sm:text-left">
+                        <h2 class="text-2xl sm:text-3xl font-bold text-white">Investimento Total</h2>
+                        <p class="text-xl text-[#E0E0E0]">R$ 4.558,00</p>
+                    </div>
+                    <div class="w-full sm:w-auto h-px sm:h-16 sm:w-px bg-[#A855F7]/50"></div>
+                    <div class="text-center sm:text-left">
+                         <h2 class="text-2xl sm:text-3xl font-bold text-white">Prazo Estimado</h2>
+                        <p class="text-xl text-[#E0E0E0]">15/08</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div class="text-center py-8 no-print animate-on-scroll">
+        <a href="https://wa.me/5551994408307" target="_blank" rel="noopener noreferrer" class="bg-[#A855F7] hover:bg-purple-500 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300 flex items-center gap-2 mx-auto w-fit max-w-xs">
+            <i data-lucide="message-square"></i>
+            O que me diz?
+        </a>
+    </div>
+    
+    <footer class="text-center py-6 mt-8 border-t border-gray-700/50">
+        <p class="text-[#A0A0A0] text-sm">&copy; 2025 Dev no Flow. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            document.querySelectorAll('.animate-on-scroll').forEach(el => {
+                observer.observe(el);
+            });
+
+            const downloadButton = document.getElementById('download-pdf');
+            downloadButton.addEventListener('click', () => {
+                const element = document.getElementById('budget-content');
+                const opt = {
+                    margin:       0.5,
+                    filename:     'orcamento_projeto.pdf',
+                    image:        { type: 'jpeg', quality: 0.98 },
+                    html2canvas:  { scale: 2, backgroundColor: '#121212', useCORS: true },
+                    jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+                };
+                html2pdf().set(opt).from(element).save();
+            });
+        });
+    </script>
+</body>
+</html>
