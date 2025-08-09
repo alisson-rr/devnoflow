@@ -1,6 +1,7 @@
 import React from "react";
 import MedbraImg from "../assets/Medbra.png";
 import FixwearImg from "../assets/Fixwear.png";
+import IconicoVideo from "../assets/Iconico.mp4";
 
 
 const testimonials = [
@@ -36,8 +37,10 @@ const TestimonialsSection = () => {
         <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
           {/* Vídeo do depoimento */}
           <div className="w-full md:w-1/2 flex flex-col items-center rounded-xl overflow-hidden shadow-lg animate-on-scroll">
+import IconicoVideo from '../assets/Iconico.mp4';
+...
             <video
-              src={require("../assets/Iconico.mp4")}
+              src={IconicoVideo}
               controls
               className="w-full max-w-[500px] h-auto object-cover rounded-xl"
             />
