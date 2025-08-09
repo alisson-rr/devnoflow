@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-zinc-900/50 border-t border-purple-500/20">
       <div className="container mx-auto px-6 py-12 text-center">
         <img 
-          src="http://devnoflow.com.br/images/2.png?_wwcv=12" 
+          src="/Dev No Flow.png" 
           alt="DevNoFlow Logo" 
           className="h-10 mx-auto"
         />
