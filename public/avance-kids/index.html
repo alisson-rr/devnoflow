@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação Avance Kids</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="presentation.css">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gray-900">
+    <main id="presentation-container">
+        
+        <!-- SLIDE 1: TÍTULO -->
+        <section class="presentation-slide bg-nuvem-suave text-grafite flex-col justify-center items-center text-center">
+            <div data-animate class="mb-8">
+                <img src="assets/dnf.png" alt="Avance Kids Logo" class="h-24 mx-auto">
+            </div>
+            <h1 data-animate class="text-6xl md:text-8xl font-bold text-azul-confianca">Avance Kids</h1>
+            <p data-animate class="mt-4 text-xl md:text-2xl text-grafite/80 max-w-2xl">Acompanhe e Potencialize o Desenvolvimento do seu Filho</p>
+            <div data-animate class="absolute bottom-8 text-grafite/60 text-sm">
+                PRD & Roadmap | 8/13/2025
+            </div>
+        </section>
+
+        <!-- SLIDE 2: VISÃO GERAL -->
+        <section class="presentation-slide bg-white layout-spacious">
+            <div data-animate class="w-full max-w-5xl mx-auto prose lg:prose-xl">
+                <h2 class="text-grafite !mb-2">Visão Geral do App</h2>
+                <p class="lead text-azul-confianca">O Avance Kid é um app para pais, mães e profissionais acompanharem o desenvolvimento de crianças autistas e neurodivergentes.</p>
+                <p>A proposta é identificar a “idade funcional” em diferentes áreas (comunicação, social, cognitiva, motora, funcional) e orientar exercícios práticos para avançar habilidades.</p>
+                <p>A jornada começa por uma triagem simples e evolui para checklists detalhados por faixa etária, gerando um plano de exercícios com instruções claras (A—Aquisição, B—Generalização, C—Manutenção) e registro de sessões.</p>
+                <p>O produto será um SaaS freemium: usuários gerenciam várias crianças no mesmo login, acessam conteúdo essencial gratuitamente e desbloqueiam recursos premium para acompanhamento avançado.</p>
+            </div>
+        </section>
+
+        <!-- SLIDE 3: OBJETIVOS DA V1 -->
+        <section class="presentation-slide bg-nuvem-suave layout-spacious">
+            <div data-animate class="w-full max-w-5xl mx-auto prose lg:prose-xl">
+                <h2 class="text-grafite !mb-8 text-center">Objetivos da Primeira Versão (v1)</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-4"><i data-lucide="check-circle-2" class="w-8 h-8 text-verde-apoio mt-1 shrink-0"></i><span><strong>Validar adesão</strong> à triagem e aos checklists por faixa etária.</span></li>
+                    <li class="flex items-start gap-4"><i data-lucide="check-circle-2" class="w-8 h-8 text-verde-apoio mt-1 shrink-0"></i><span><strong>Tornar possível</strong> planejar e registrar sessões com exercícios padronizados (A/B/C).</span></li>
+                    <li class="flex items-start gap-4"><i data-lucide="check-circle-2" class="w-8 h-8 text-verde-apoio mt-1 shrink-0"></i><span><strong>Coletar dados de uso</strong> para entender progressão e gargalos de usabilidade.</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SLIDE 4: PERSONAS PRIORITÁRIAS -->
+        <section class="presentation-slide bg-white layout-spacious items-center">
+            <div data-animate class="w-full max-w-4xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-grafite text-center mb-10">Personas Prioritárias</h2>
+                <div class="persona-card border-t-4 border-azul-confianca !p-8">
+                    <i data-lucide="users" class="h-16 w-16 text-azul-confianca mb-6"></i>
+                    <h3 class="text-3xl font-bold">Responsáveis e Profissionais</h3>
+                    <p class="mt-4 text-grafite/80 text-lg">Pais, mães, cuidadores e profissionais que executam rotinas com a criança em casa, na escola ou no consultório.</p>
+                    <p class="mt-6 font-semibold text-grafite text-xl">Principal Necessidade:</p>
+                    <p class="mt-2 text-grafite/90 text-lg">Orientação objetiva, exemplos simples e registro rápido de resultados.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SLIDE 5: FUNCIONALIDADES ESSENCIAIS (MVP) -->
+        <section class="presentation-slide bg-azul-confianca text-white layout-spacious text-center">
+            <div data-animate class="prose prose-xl prose-invert max-w-5xl mx-auto">
+                <h2 class="!text-white">Funcionalidades Essenciais (MVP)</h2>
+                <p>O que será construído na primeira versão para entregar valor imediato.</p>
+            </div>
+        </section>
+        
+        <!-- SLIDE 6: MVP - CONTA & CRIANÇAS -->
+        <section class="presentation-slide bg-nuvem-suave layout-spacious">
+            <div data-animate class="w-full max-w-5xl mx-auto prose lg:prose-xl">
+                 <h3 class="text-grafite flex items-center gap-4"><i data-lucide="users" class="w-10 h-10 text-azul-confianca"></i><span>Conta & Crianças</span></h3>
+                <ul>
+                    <li>Cadastro/login com E-mail, Google e Apple.</li>
+                    <li>Gerenciamento de várias crianças por conta, sem limite na v1.</li>
+                    <li>Perfil da criança: nome, data de nascimento, dados básicos e consentimento de uso de dados.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SLIDE 7: MVP - TRIAGEM & CHECKLISTS -->
+        <section class="presentation-slide bg-white layout-spacious">
+            <div data-animate class="w-full max-w-5xl mx-auto prose lg:prose-xl">
+                <h3 class="text-grafite flex items-center gap-4"><i data-lucide="clipboard-list" class="w-10 h-10 text-azul-confianca"></i><span>Triagem & Checklists</span></h3>
+                <ul>
+                    <li><strong>Triagem relâmpago:</strong> Perguntas de Sim/Não para sugerir a faixa etária inicial.</li>
+                    <li><strong>Checklists por faixa etária e área:</strong> Avaliação com escala A (Aquisição), B (Generalização), C (Manutenção) e NV (Não Verificado), com exemplos de interpretação.</li>
+                    <li><strong>Regras de recuo/avanço "como estão":</strong> Aplicação de critérios específicos definidos para cada faixa etária para sugerir o próximo passo.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- SLIDE 8: MVP - PLANO DE EXERCÍCIOS -->
+        <section class="presentation-slide bg-nuvem-suave layout-spacious">
+            <div data-animate class="w-full max-w-5xl mx-auto prose lg:prose-xl">
+                 <h3 class="text-grafite flex items-center gap-4"><i data-lucide="file-spreadsheet" class="w-10 h-10 text-azul-confianca"></i><span>Plano de Exercícios</span></h3>
+                <ul>
+                    <li><strong>Geração automática de plano</strong> a partir das marcações do checklist (A = ensino, B = generalização, C = manutenção).</li>
+                    <li><strong>Exercícios padronizados</strong> por habilidade, com objetivo, frequência, hierarquia de dicas, passo a passo e critérios de avanço.</li>
+                    <li><strong>Vídeos demonstrativos</strong> em alguns exercícios, com player integrado no app.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- SLIDE 9: MVP - EXECUÇÃO & REGISTRO -->
+        <section class="presentation-slide bg-white layout-spacious">
+            <div data-animate class="w-full max-w-5xl mx-auto prose lg:prose-xl">
+                <h3 class="text-grafite flex items-center gap-4"><i data-lucide="edit-3" class="w-10 h-10 text-azul-confianca"></i><span>Execução & Registro</span></h3>
+                <ul>
+                    <li><strong>Registro de sessões</strong> com marcação de acerto/erro (✓/✗) por tentativa e campo para observações.</li>
+                    <li><strong>Sugestão de progressão automática</strong> ao atingir critérios (ex: ≥80% sem ajuda por 2 sessões seguidas → avançar para Generalização).</li>
+                    <li><strong>Histórico recente</strong> de atividades por criança.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- SLIDE 10: MVP - RELATÓRIOS (USUÁRIO FINAL) -->
+        <section class="presentation-slide bg-nuvem-suave layout-spacious">
+            <div data-animate class="w-full max-w-5xl mx-auto prose lg:prose-xl">
+                 <h3 class="text-grafite flex items-center gap-4"><i data-lucide="pie-chart" class="w-10 h-10 text-azul-confianca"></i><span>Relatórios (Usuário Final)</span></h3>
+                <ul>
+                    <li><strong>Visão Geral da Criança:</strong> Status por faixa atual (Idade Funcional).</li>
+                    <li><strong>Áreas:</strong> Resumo de status A/B/C por área de desenvolvimento.</li>
+                    <li><strong>Habilidades Recentes (14 dias):</strong> Itens trabalhados e seus respectivos status.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- SLIDE 11: MVP - ASSINATURA (PLANOS) -->
+        <section class="presentation-slide bg-white layout-spacious">
+            <div data-animate class="w-full max-w-5xl mx-auto prose lg:prose-xl">
+                <h3 class="text-grafite flex items-center gap-4"><i data-lucide="gem" class="w-10 h-10 text-azul-confianca"></i><span>Assinatura (Planos)</span></h3>
+                <ul>
+                    <li><strong>Gratuito:</strong> Acesso à triagem, checklists, plano básico, registro e exercícios essenciais.</li>
+                    <li><strong>Premium:</strong> Checklists ilimitados sempre visíveis, biblioteca completa de exercícios e vídeos, relatórios em PDF, filtros e segmentações.</li>
+                    <li><strong>Gestão de assinatura e cobrança no web</strong> (Checkout/Portal), com reconhecimento do status no app mobile.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- SLIDE 12: MVP - ADMIN (V1 ENXUTO) -->
+        <section class="presentation-slide bg-nuvem-suave layout-spacious">
+            <div data-animate class="w-full max-w-5xl mx-auto prose lg:prose-xl">
+                 <h3 class="text-grafite flex items-center gap-4"><i data-lucide="database" class="w-10 h-10 text-azul-confianca"></i><span>Admin (v1 enxuto)</span></h3>
+                <ul>
+                    <li><strong>CRUD de exercícios:</strong> funcionalidade para criar, editar, publicar e arquivar exercícios.</li>
+                    <li><strong>Campos do exercício:</strong> objetivo, materiais, frequência, hierarquia de dicas, procedimento, critérios A/B/C, registro e mídia (vídeo opcional).</li>
+                    <li><strong>Publicação imediata:</strong> Conteúdo entra em vigor no app assim que publicado pelo admin.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- SLIDE 13: FLUXO PRINCIPAL DO USUÁRIO -->
+        <section class="presentation-slide bg-white layout-spacious">
+            <div class="w-full max-w-5xl mx-auto">
+                <h2 data-animate class="text-4xl md:text-5xl font-bold text-grafite text-center mb-10">Fluxo Principal do Usuário</h2>
+                <div data-animate class="prose lg:prose-xl max-w-none">
+                    <ol class="space-y-2">
+                        <li>Acessa o app → cria conta → aceita consentimento.</li>
+                        <li>Cadastra a criança.</li>
+                        <li>Realiza <strong>triagem relâmpago</strong> (Sim/Não) → recebe sugestão de faixa ativa.</li>
+                        <li>Preenche <strong>checklist da faixa</strong> (A/B/C/NV).</li>
+                        <li>Recebe <strong>plano automático</strong> (exercícios por habilidade A/B/C).</li>
+                        <li>Executa exercícios → registra tentativas/sessões.</li>
+                        <li>App <strong>sugere progressão</strong> ao cumprir critérios.</li>
+                        <li>Consulta relatórios simples de progresso.</li>
+                        <li>(Opcional) Assina <strong>Premium</strong> para relatórios PDF e biblioteca completa.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 14: REQUISITOS NÃO-FUNCIONAIS -->
+        <section class="presentation-slide bg-grafite text-white layout-spacious text-center">
+            <div data-animate class="prose prose-xl prose-invert max-w-5xl mx-auto">
+                <h2 class="!text-white">Requisitos Não-Funcionais</h2>
+                <p>Aspectos técnicos e de qualidade que definem a operação do sistema.</p>
+            </div>
+        </section>
+
+        <!-- SLIDE 15: REQ. NÃO-FUNCIONAIS - PLATAFORMA & CONTEÚDO -->
+        <section class="presentation-slide bg-nuvem-suave layout-spacious">
+            <div data-animate class="w-full max-w-5xl mx-auto prose lg:prose-xl">
+                <h3>Plataforma</h3>
+                <p><strong>Web responsivo e mobile com Bubble.</strong> Bubble disponibiliza recursos nativos para apps iOS/Android em beta público (2025), com documentação oficial de publicação nas lojas. Isso valida que "não impacta" publicar o app.</p>
+                <h3>Conteúdo & Padrão dos Exercícios</h3>
+                <p>Exercícios padronizados em blocos (objetivo, frequência, hierarquia de dicas, passo a passo, critérios A/B/C, registro) — modelo aplicado em todo o catálogo (ex.: “Olha durante brincadeira”: Aquisição/Generalização/Manutenção, ≥ 80% para avanço).</p>
+            </div>
+        </section>
+
+        <!-- SLIDE 16: REQ. NÃO-FUNCIONAIS - GERAIS -->
+        <section class="presentation-slide bg-white layout-spacious">
+            <div data-animate class="w-full max-w-5xl mx-auto prose lg:prose-xl">
+                <h3>Outros Requisitos</h3>
+                <ul>
+                    <li><strong>Idiomas:</strong> sem multi-idioma na v1 (PT-BR).</li>
+                    <li><strong>Privacidade & Legal:</strong> consentimento do responsável; aviso de caráter educacional; política de privacidade (LGPD).</li>
+                    <li><strong>Acessibilidade & UI:</strong> linguagem simples, botões grandes, contraste adequado. <strong>Fonte: Inter</strong>; paleta neutra e amigável.</li>
+                    <li><strong>Assinaturas & Pagamentos:</strong> freemium; cobrança no web (ex.: Checkout/Portal). No mobile, o app reconhece o status de assinatura.</li>
+                    <li><strong>Disponibilidade:</strong> v1 focada em estabilidade de uso cotidiano; sem promessas clínicas.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SLIDE 17: ITENS FORA DO ESCOPO -->
+        <section class="presentation-slide bg-nuvem-suave layout-spacious">
+            <div data-animate class="w-full max-w-5xl mx-auto prose lg:prose-xl">
+                <h2 class="text-grafite text-center !mb-8">Itens Fora do Escopo (Por Enquanto)</h2>
+                <ul class="space-y-3">
+                    <li class="flex items-start gap-3"><i data-lucide="x-circle" class="w-6 h-6 text-coral-progresso mt-1 shrink-0"></i><span>Notificações push e deep links avançados.</span></li>
+                    <li class="flex items-start gap-3"><i data-lucide="x-circle" class="w-6 h-6 text-coral-progresso mt-1 shrink-0"></i><span>Compras in-app (IAP) nativas nas lojas.</span></li>
+                    <li class="flex items-start gap-3"><i data-lucide="x-circle" class="w-6 h-6 text-coral-progresso mt-1 shrink-0"></i><span>Multi-idioma.</span></li>
+                    <li class="flex items-start gap-3"><i data-lucide="x-circle" class="w-6 h-6 text-coral-progresso mt-1 shrink-0"></i><span>Perfis e permissões diferenciados por tipo de usuário.</span></li>
+                    <li class="flex items-start gap-3"><i data-lucide="x-circle" class="w-6 h-6 text-coral-progresso mt-1 shrink-0"></i><span>Dashboard avançado do Admin (gráficos/insights); relatórios analíticos.</span></li>
+                    <li class="flex items-start gap-3"><i data-lucide="x-circle" class="w-6 h-6 text-coral-progresso mt-1 shrink-0"></i><span>Exportações e integrações externas além de PDF para o usuário.</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SLIDE 18: INDICADORES DE SUCESSO -->
+        <section class="presentation-slide bg-white layout-spacious">
+            <div class="w-full max-w-6xl mx-auto">
+                <h2 data-animate class="text-4xl md:text-5xl font-bold text-grafite text-center mb-10">Indicadores de Sucesso da v1</h2>
+                <div data-animate class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="metric-card text-azul-confianca p-6">
+                        <h3 class="font-bold text-xl">Adoção Inicial</h3>
+                        <p class="mt-2 text-grafite/80 text-base"><strong>Meta:</strong> 200 cadastros e 60 crianças com triagem concluída em 30 dias.</p>
+                    </div>
+                    <div class="metric-card text-coral-progresso p-6">
+                        <h3 class="font-bold text-xl">Atividade Chave</h3>
+                        <p class="mt-2 text-grafite/80 text-base"><strong>Meta:</strong> 30 planos com ≥3 sessões registradas na primeira semana pós-triagem.</p>
+                    </div>
+                    <div class="metric-card text-verde-apoio p-6">
+                        <h3 class="font-bold text-xl">Conversão</h3>
+                        <p class="mt-2 text-grafite/80 text-base"><strong>Meta:</strong> 10–15% dos ativos testando Premium até o dia 30.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 19: OBSERVAÇÕES IMPORTANTES -->
+        <section class="presentation-slide bg-nuvem-suave layout-spacious">
+            <div data-animate class="w-full max-w-5xl mx-auto prose lg:prose-xl">
+                <h2 class="text-grafite text-center !mb-8">Observações para Execução</h2>
+                <ul class="space-y-4">
+                    <li><strong>Biblioteca de exercícios:</strong> já padronizada; seguir o mesmo template (objetivo, dicas, passos, critérios e registro) e usar vídeos quando houver.</li>
+                    <li><strong>Freemium:</strong> não limitar nº de crianças; diferenciar pelo valor (relatórios PDF, biblioteca completa de vídeos e recursos).</li>
+                    <li><strong>Admin mínimo:</strong> somente CRUD de exercícios na v1. O dashboard administrativo fica para uma v2.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SLIDE 20: MODELOS DE INSPIRAÇÃO -->
+        <section class="presentation-slide bg-white layout-spacious">
+            <div class="w-full max-w-6xl mx-auto">
+                <h2 data-animate class="text-4xl md:text-5xl font-bold text-grafite text-center mb-10">Modelos de Inspiração</h2>
+                <div data-animate class="table-container h-[500px] overflow-y-auto">
+                    <table class="w-full text-sm">
+                        <thead class="sticky top-0"><tr><th class="p-3">App</th><th class="p-3">Plataforma</th><th class="p-3">Descrição</th><th class="p-3">Funcionalidades</th></tr></thead>
+                        <tbody class="text-grafite/80">
+                            <tr class="border-t"> <td class="p-3 font-semibold">Kinedu</td><td class="p-3">iOS, Android</td><td class="p-3">Programa diário personalizado do pré-natal aos 6 anos</td><td class="p-3">Vídeos de atividades, marcos e relatórios por área; classes com especialistas</td></tr>
+                            <tr class="border-t"> <td class="p-3 font-semibold">BabySparks</td><td class="p-3">iOS, Android</td><td class="p-3">Atividades e marcos 0–3 anos com vídeos</td><td class="p-3">Programa diário, trilhas por habilidade, rastreio de marcos e relatórios</td></tr>
+                            <tr class="border-t"> <td class="p-3 font-semibold">CDC Milestone Tracker</td><td class="p-3">iOS, Android</td><td class="p-3">Checklists 2m–5a com fotos/vídeos e dicas</td><td class="p-3">Multi-criança, resumo compartilhável, lembretes</td></tr>
+                            <tr class="border-t"> <td class="p-3 font-semibold">AutiSpark</td><td class="p-3">Android (iOS)</td><td class="p-3">Jogos educativos para crianças no espectro</td><td class="p-3">Linguagem, emoções, memória, traçado; progresso por categorias</td></tr>
+                            <tr class="border-t"> <td class="p-3 font-semibold">Pathways.org</td><td class="p-3">iOS, Android</td><td class="p-3">App de marcos e atividades validadas por especialistas</td><td class="p-3">Dashboard de marcos com vídeos, atividades por faixa, recursos gratuitos</td></tr>
+                            <tr class="border-t"> <td class="p-3 font-semibold">Otsimo</td><td class="p-3">iOS, Android</td><td class="p-3">Jogos estruturados para necessidades especiais</td><td class="p-3">“Learning path”, relatórios de progresso, múltiplos perfis, modo offline</td></tr>
+                            <tr class="border-t"> <td class="p-3 font-semibold">Ensora Data Collection</td><td class="p-3">iOS, Android, Web</td><td class="p-3">Coleta de dados ABA para equipes clínicas</td><td class="p-3">Alvos com regras de baseline→aquisição→manutenção, gráficos e relatórios</td></tr>
+                            <tr class="border-t"> <td class="p-3 font-semibold">RethinkBH</td><td class="p-3">iOS, Android, Web</td><td class="p-3">App móvel para assinantes Rethink First</td><td class="p-3">Coleta de dados, modo offline, currículo em vídeo para equipes</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 21: INSIGHTS & OPORTUNIDADES COM IA -->
+        <section class="presentation-slide bg-grafite text-white layout-spacious">
+            <div data-animate class="w-full max-w-5xl mx-auto prose prose-xl prose-invert">
+                <h2 class="!text-white text-center">Insights e Oportunidades com IA</h2>
+                <div class="mt-12 feature-item">
+                    <div class="feature-number !bg-coral-progresso/20 !text-coral-progresso">1</div>
+                    <div>
+                        <h3 class="!text-white">Regras A/B/C visíveis + progressão automática</h3>
+                        <p class="!text-white/80">O sistema define sozinho quando avançar ou recuar a habilidade, com base nos registros. A IA analisa o desempenho, identifica padrões e ajusta a régua de progresso, evitando que o pai avance cedo demais ou fique preso na mesma etapa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SLIDE 22: INSIGHTS & OPORTUNIDADES COM IA -->
+        <section class="presentation-slide bg-grafite text-white layout-spacious">
+            <div data-animate class="w-full max-w-5xl mx-auto prose prose-xl prose-invert">
+                 <h2 class="!text-white text-center">Insights e Oportunidades com IA</h2>
+                <div class="mt-12 feature-item">
+                    <div class="feature-number !bg-coral-progresso/20 !text-coral-progresso">2</div>
+                    <div>
+                        <h3 class="!text-white">Sessão rápida + vídeo do exercício</h3>
+                        <p class="!text-white/80">Cada exercício já vem com um vídeo demonstrativo e registro rápido por ✓/✗. A IA conversa com o pai durante ou após o treino, dando dicas personalizadas e sugerindo ajustes com base nos erros e dificuldades da criança.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SLIDE 23: INSIGHTS & OPORTUNIDADES COM IA -->
+        <section class="presentation-slide bg-grafite text-white layout-spacious">
+            <div data-animate class="w-full max-w-5xl mx-auto prose prose-xl prose-invert">
+                <h2 class="!text-white text-center">Insights e Oportunidades com IA</h2>
+                <div class="mt-12 feature-item">
+                    <div class="feature-number !bg-coral-progresso/20 !text-coral-progresso">3</div>
+                    <div>
+                        <h3 class="!text-white">Relatório compartilhável com feedback</h3>
+                        <p class="!text-white/80">O app gera um link seguro para terapeutas e professores. A IA resume o progresso, destaca pontos de atenção e permite que o destinatário adicione comentários, criando um ciclo de colaboração.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 24: MAPA DE TELAS -->
+        <section class="presentation-slide bg-nuvem-suave layout-spacious">
+            <div data-animate class="w-full max-w-5xl mx-auto prose lg:prose-xl">
+                <h2 class="text-grafite text-center">Mapa de Telas (1/4)</h2>
+                <h3>Conta e Criança</h3>
+                <ul>
+                    <li>Boas-vindas / Login</li>
+                    <li>Criar Conta</li>
+                    <li>Consentimento (LGPD)</li>
+                    <li>Seleção de Criança</li>
+                    <li>Cadastrar Criança</li>
+                    <li>Visão Geral da Criança</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- SLIDE 25: MAPA DE TELAS -->
+        <section class="presentation-slide bg-white layout-spacious">
+            <div data-animate class="w-full max-w-5xl mx-auto prose lg:prose-xl">
+                <h2 class="text-grafite text-center">Mapa de Telas (2/4)</h2>
+                <h3>Avaliação e Planejamento</h3>
+                <ul>
+                    <li>Triagem Relâmpago</li>
+                    <li>Checklist da Faixa (por Área)</li>
+                    <li>Resultado & Ativar Faixa</li>
+                    <li>Plano de Exercícios</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SLIDE 26: MAPA DE TELAS -->
+        <section class="presentation-slide bg-nuvem-suave layout-spacious">
+            <div data-animate class="w-full max-w-5xl mx-auto prose lg:prose-xl">
+                <h2 class="text-grafite text-center">Mapa de Telas (3/4)</h2>
+                <h3>Execução e Acompanhamento</h3>
+                <ul>
+                    <li>Detalhe do Exercício</li>
+                    <li>Executar Sessão</li>
+                    <li>Histórico da Criança</li>
+                    <li>Relatórios (Usuário)</li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- SLIDE 27: MAPA DE TELAS -->
+        <section class="presentation-slide bg-white layout-spacious">
+            <div data-animate class="w-full max-w-5xl mx-auto prose lg:prose-xl">
+                <h2 class="text-grafite text-center">Mapa de Telas (4/4)</h2>
+                <h3>Configurações e Admin</h3>
+                <ul>
+                    <li>Assinatura / Planos</li>
+                    <li>Perfil & Configurações</li>
+                    <li>Admin – Lista de Exercícios</li>
+                    <li>Admin – Criar/Editar Exercício</li>
+                    <li>Admin – Publicar</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SLIDE 28: DETALHE DE TELA: LOGIN -->
+        <section class="presentation-slide bg-nuvem-suave layout-spacious">
+            <div data-animate class="w-full max-w-5xl mx-auto prose lg:prose-xl">
+                <h3>Tela: Boas-vindas / Login</h3>
+                <p><strong>Objetivo:</strong> Permitir que o usuário acesse a conta.</p>
+                <p><strong>Componentes:</strong> Título, Botões (Google, Apple, e-mail), Campos de e-mail/senha, Links (Criar conta, Esqueci senha).</p>
+            </div>
+        </section>
+
+        <!-- SLIDE 29: DETALHE DE TELA: CONTA & CONSENTIMENTO -->
+        <section class="presentation-slide bg-white layout-spacious">
+            <div data-animate class="w-full max-w-5xl mx-auto prose lg:prose-xl grid md:grid-cols-2 gap-8">
+                <div>
+                    <h4>Tela: Criar Conta</h4>
+                    <p><strong>Objetivo:</strong> Criar nova conta.</p>
+                    <p><strong>Componentes:</strong> Título, Campos (Nome, E-mail, Senha), Checkbox de termos, Botão "Criar conta".</p>
+                </div>
+                <div>
+                    <h4>Tela: Consentimento (LGPD)</h4>
+                    <p><strong>Objetivo:</strong> Registrar aceite de consentimento.</p>
+                    <p><strong>Componentes:</strong> Título, Texto resumo, Botões (Aceito, Não aceito), Link para Política de Privacidade.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 30: DETALHE DE TELA: CRIANÇA -->
+        <section class="presentation-slide bg-nuvem-suave layout-spacious">
+             <div data-animate class="w-full max-w-5xl mx-auto prose lg:prose-xl grid md:grid-cols-2 gap-8">
+                <div>
+                    <h4>Tela: Seleção de Criança</h4>
+                    <p><strong>Objetivo:</strong> Listar e acessar crianças.</p>
+                    <p><strong>Componentes:</strong> Título, Lista de crianças, Botão "Adicionar", Ações (Abrir, Editar).</p>
+                </div>
+                <div>
+                    <h4>Tela: Cadastrar Criança</h4>
+                    <p><strong>Objetivo:</strong> Registrar dados básicos.</p>
+                    <p><strong>Componentes:</strong> Título, Campos (Nome, Data de nascimento), Checkbox de consentimento, Botões.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SLIDE 31: DETALHE DE TELA: VISÃO GERAL -->
+        <section class="presentation-slide bg-white layout-spacious">
+            <div data-animate class="w-full max-w-5xl mx-auto prose lg:prose-xl">
+                <h3>Tela: Visão Geral da Criança</h3>
+                <p><strong>Objetivo:</strong> Visão rápida de status e atalhos.</p>
+                <p><strong>Componentes:</strong> Título, Cards (Faixa ativa, Áreas A/B/C, Próxima ação), Histórico rápido (14 dias), Botões de ação (Triagem, Checklist, etc.).</p>
+                <p><strong>Condição:</strong> Se não houver faixa ativa, destaca o CTA “Fazer triagem”.</p>
+            </div>
+        </section>
+
+        <!-- SLIDE 32: DETALHE DE TELA: TRIAGEM & CHECKLIST -->
+        <section class="presentation-slide bg-nuvem-suave layout-spacious">
+             <div data-animate class="w-full max-w-5xl mx-auto prose lg:prose-xl grid md:grid-cols-2 gap-8">
+                <div>
+                    <h4>Tela: Triagem Relâmpago</h4>
+                    <p><strong>Objetivo:</strong> Aplicar perguntas Sim/Não para sugerir faixa.</p>
+                    <p><strong>Componentes:</strong> Título, Lista de perguntas (Sim/Não), Botão "Concluir triagem".</p>
+                </div>
+                <div>
+                    <h4>Tela: Checklist da Faixa</h4>
+                    <p><strong>Objetivo:</strong> Registrar A/B/C/NV por item.</p>
+                    <p><strong>Componentes:</strong> Título, Tabs de Áreas, Lista de itens com seletor A/B/C/NV, Botão de salvar.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 33: DETALHE DE TELA: RESULTADO & PLANO -->
+        <section class="presentation-slide bg-white layout-spacious">
+             <div data-animate class="w-full max-w-5xl mx-auto prose lg:prose-xl grid md:grid-cols-2 gap-8">
+                <div>
+                    <h4>Tela: Resultado & Ativar Faixa</h4>
+                    <p><strong>Objetivo:</strong> Mostrar faixa sugerida e confirmar.</p>
+                    <p><strong>Componentes:</strong> Título, Resumo, Bloco "Faixa sugerida", Botão "Ativar faixa".</p>
+                </div>
+                <div>
+                    <h4>Tela: Plano de Exercícios</h4>
+                    <p><strong>Objetivo:</strong> Visualizar plano gerado.</p>
+                    <p><strong>Componentes:</strong> Título, Filtros, Lista de habilidades (A/B/C), Badges "Premium", Botão "Exportar PDF (Premium)".</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SLIDE 34: DETALHE DE TELA: EXERCÍCIO & EXECUÇÃO -->
+        <section class="presentation-slide bg-nuvem-suave layout-spacious">
+            <div data-animate class="w-full max-w-5xl mx-auto prose lg:prose-xl grid md:grid-cols-2 gap-8">
+                <div>
+                    <h4>Tela: Detalhe do Exercício</h4>
+                    <p><strong>Objetivo:</strong> Orientar execução.</p>
+                    <p><strong>Componentes:</strong> Título, Seções (Objetivo, Materiais, Passos), Player de vídeo, Botão "Iniciar sessão".</p>
+                </div>
+                <div>
+                    <h4>Tela: Executar Sessão</h4>
+                    <p><strong>Objetivo:</strong> Registrar tentativas.</p>
+                    <p><strong>Componentes:</strong> Título, Grade de tentativas (✓/✗), Campo "Observações", Resumo de acertos, Botão "Salvar sessão".</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SLIDE 35: DETALHE DE TELA: HISTÓRICO & RELATÓRIOS -->
+        <section class="presentation-slide bg-white layout-spacious">
+            <div data-animate class="w-full max-w-5xl mx-auto prose lg:prose-xl grid md:grid-cols-2 gap-8">
+                <div>
+                    <h4>Tela: Histórico da Criança</h4>
+                    <p><strong>Objetivo:</strong> Exibir atividades recentes (14 dias).</p>
+                    <p><strong>Componentes:</strong> Título, Filtros, Lista (data, habilidade, resultado), Botão "Ver mais".</p>
+                </div>
+                <div>
+                    <h4>Tela: Relatórios (Usuário)</h4>
+                    <p><strong>Objetivo:</strong> Visão consolidada.</p>
+                    <p><strong>Componentes:</strong> Título, Abas (Visão Geral, Áreas, Habilidades), CTA para Premium.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SLIDE 36: DETALHE DE TELA: ASSINATURA & PERFIL -->
+        <section class="presentation-slide bg-nuvem-suave layout-spacious">
+            <div data-animate class="w-full max-w-5xl mx-auto prose lg:prose-xl grid md:grid-cols-2 gap-8">
+                <div>
+                    <h4>Tela: Assinatura / Planos</h4>
+                    <p><strong>Objetivo:</strong> Informar benefícios e acionar checkout.</p>
+                    <p><strong>Componentes:</strong> Título, "Seu plano atual", Lista de benefícios, Botão "Assinar no site".</p>
+                </div>
+                <div>
+                    <h4>Tela: Perfil & Configurações</h4>
+                    <p><strong>Objetivo:</strong> Gerenciar conta.</p>
+                    <p><strong>Componentes:</strong> Título, Campos (Nome, E-mail), Links (Política, Suporte), Botão "Sair".</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SLIDE 37: DETALHE DE TELA: ADMIN -->
+        <section class="presentation-slide bg-white layout-spacious">
+            <div data-animate class="w-full max-w-5xl mx-auto prose lg:prose-xl">
+                <h2 class="text-grafite text-center !mb-8">Telas de Administração</h2>
+                 <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4>Lista de Exercícios</h4>
+                        <p><strong>Objetivo:</strong> Gerenciar catálogo.</p>
+                        <p><strong>Componentes:</strong> Título, Filtros, Tabela de exercícios, Botão "Novo exercício".</p>
+                    </div>
+                    <div>
+                        <h4>Criar/Editar Exercício</h4>
+                        <p><strong>Objetivo:</strong> Cadastrar em template.</p>
+                        <p><strong>Componentes:</strong> Formulário com campos padronizados, Upload de vídeo, Botão "Salvar rascunho".</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 38: BANCO DE DADOS -->
+        <section class="presentation-slide bg-grafite text-white layout-spacious text-center">
+            <div data-animate class="prose prose-xl prose-invert max-w-5xl mx-auto">
+                <h2 class="!text-white">Estrutura do Banco de Dados</h2>
+                <p>Modelagem de dados para a v1.</p>
+            </div>
+        </section>
+        
+        <!-- SLIDE 39: BD - USER, CRIANÇA -->
+        <section class="presentation-slide bg-white layout-spacious">
+            <div class="w-full max-w-6xl mx-auto">
+                <div data-animate class="mb-8">
+                    <h3 class="text-2xl font-bold text-grafite text-center">Tabelas: User, Criança</h3>
+                </div>
+                <div data-animate class="grid md:grid-cols-2 gap-8">
+                    <div class="table-container"><table class="w-full text-sm"><thead><tr><th colspan="3" class="p-3 bg-nuvem-suave font-bold">User</th></tr><tr><th class="p-2">Campo</th><th class="p-2">Tipo</th><th class="p-2">Descrição</th></tr></thead><tbody><tr class="border-t"> <td class="p-2 font-mono">nome</td><td class="p-2">Text</td><td class="p-2">Nome do responsável</td></tr><tr class="border-t"> <td class="p-2 font-mono">is_admin</td><td class="p-2">Yes/No</td><td class="p-2">Acesso ao CRUD</td></tr><tr class="border-t"> <td class="p-2 font-mono">is_premium</td><td class="p-2">Yes/No</td><td class="p-2">Status de assinatura</td></tr></tbody></table></div>
+                    <div class="table-container"><table class="w-full text-sm"><thead><tr><th colspan="3" class="p-3 bg-nuvem-suave font-bold">Criança</th></tr><tr><th class="p-2">Campo</th><th class="p-2">Tipo</th><th class="p-2">Descrição</th></tr></thead><tbody><tr class="border-t"> <td class="p-2 font-mono">responsavel</td><td class="p-2">User</td><td class="p-2">Dono do cadastro</td></tr><tr class="border-t"> <td class="p-2 font-mono">nome</td><td class="p-2">Text</td><td class="p-2">Nome da criança</td></tr><tr class="border-t"> <td class="p-2 font-mono">data_nascimento</td><td class="p-2">Date</td><td class="p-2">Data de nascimento</td></tr><tr class="border-t"> <td class="p-2 font-mono">consentimento</td><td class="p-2">Yes/No</td><td class="p-2">Aceite de uso de dados</td></tr></tbody></table></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SLIDE 40: BD - TRIAGEM -->
+        <section class="presentation-slide bg-nuvem-suave layout-spacious">
+            <div class="w-full max-w-6xl mx-auto">
+                <div data-animate class="mb-8">
+                    <h3 class="text-2xl font-bold text-grafite text-center">Tabelas de Triagem</h3>
+                </div>
+                 <div data-animate class="grid md:grid-cols-3 gap-6">
+                    <div class="table-container"><table class="w-full text-sm"><thead><tr><th colspan="2" class="p-3 bg-white font-bold">TriagemPergunta</th></tr></thead><tbody><tr><td class="p-2 font-mono">enunciado</td><td class="p-2">Pergunta Sim/Não</td></tr></tbody></table></div>
+                    <div class="table-container"><table class="w-full text-sm"><thead><tr><th colspan="2" class="p-3 bg-white font-bold">TriagemSessao</th></tr></thead><tbody><tr><td class="p-2 font-mono">crianca</td><td class="p-2">Criança</td></tr><tr><td class="p-2 font-mono">data</td><td class="p-2">Quando foi feita</td></tr></tbody></table></div>
+                    <div class="table-container"><table class="w-full text-sm"><thead><tr><th colspan="2" class="p-3 bg-white font-bold">TriagemResposta</th></tr></thead><tbody><tr><td class="p-2 font-mono">sessao</td><td class="p-2">Sessão pai</td></tr><tr><td class="p-2 font-mono">resposta</td><td class="p-2">Sim / Não</td></tr></tbody></table></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 41: BD - CHECKLIST -->
+        <section class="presentation-slide bg-white layout-spacious">
+            <div class="w-full max-w-6xl mx-auto">
+                 <div data-animate class="mb-8"><h3 class="text-2xl font-bold text-grafite text-center">Tabelas de Checklist</h3></div>
+                 <div data-animate class="grid md:grid-cols-3 gap-6">
+                    <div class="table-container"><table class="w-full text-sm"><thead><tr><th colspan="2" class="p-3 bg-nuvem-suave font-bold">ChecklistItem</th></tr></thead><tbody><tr><td class="p-2 font-mono">area</td><td class="p-2">Área (Social, etc)</td></tr><tr><td class="p-2 font-mono">faixa</td><td class="p-2">Faixa etária</td></tr><tr><td class="p-2 font-mono">enunciado</td><td class="p-2">O que observar</td></tr></tbody></table></div>
+                    <div class="table-container"><table class="w-full text-sm"><thead><tr><th colspan="2" class="p-3 bg-nuvem-suave font-bold">ChecklistExecucao</th></tr></thead><tbody><tr><td class="p-2 font-mono">crianca</td><td class="p-2">Quem foi avaliado</td></tr><tr><td class="p-2 font-mono">data</td><td class="p-2">Quando foi preenchido</td></tr><tr><td class="p-2 font-mono">contagem_A/B/C</td><td class="p-2">Contagem de itens</td></tr></tbody></table></div>
+                    <div class="table-container"><table class="w-full text-sm"><thead><tr><th colspan="2" class="p-3 bg-nuvem-suave font-bold">ChecklistItemResposta</th></tr></thead><tbody><tr><td class="p-2 font-mono">checklist</td><td class="p-2">Execução pai</td></tr><tr><td class="p-2 font-mono">item</td><td class="p-2">Item avaliado</td></tr><tr><td class="p-2 font-mono">marcacao</td><td class="p-2">A / B / C / NV</td></tr></tbody></table></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 42: BD - REGRA, EXERCICIO -->
+        <section class="presentation-slide bg-nuvem-suave layout-spacious">
+            <div class="w-full max-w-6xl mx-auto">
+                 <div data-animate class="mb-8"><h3 class="text-2xl font-bold text-grafite text-center">Tabelas: Regra, Exercício</h3></div>
+                <div data-animate class="grid md:grid-cols-2 gap-8">
+                    <div class="table-container"><table class="w-full text-sm"><thead><tr><th colspan="2" class="p-3 bg-white font-bold">RegraFaixa</th></tr></thead><tbody><tr><td class="p-2 font-mono">area</td><td class="p-2">Área alvo</td></tr><tr><td class="p-2 font-mono">faixa</td><td class="p-2">Faixa alvo</td></tr><tr><td class="p-2 font-mono">regra_texto</td><td class="p-2">Ex: "2+ itens em NÃO ⇒ recuar"</td></tr></tbody></table></div>
+                    <div class="table-container"><table class="w-full text-sm"><thead><tr><th colspan="2" class="p-3 bg-white font-bold">Exercicio</th></tr></thead><tbody><tr><td class="p-2 font-mono">titulo</td><td class="p-2">Nome do exercício</td></tr><tr><td class="p-2 font-mono">objetivo</td><td class="p-2">O que atingir</td></tr><tr><td class="p-2 font-mono">procedimento</td><td class="p-2">Passo a passo</td></tr><tr><td class="p-2 font-mono">video_url</td><td class="p-2">URL do vídeo</td></tr></tbody></table></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SLIDE 43: BD - PLANO -->
+        <section class="presentation-slide bg-white layout-spacious">
+            <div class="w-full max-w-6xl mx-auto">
+                 <div data-animate class="mb-8"><h3 class="text-2xl font-bold text-grafite text-center">Tabelas de Plano</h3></div>
+                <div data-animate class="grid md:grid-cols-2 gap-8">
+                    <div class="table-container"><table class="w-full text-sm"><thead><tr><th colspan="2" class="p-3 bg-nuvem-suave font-bold">Plano</th></tr></thead><tbody><tr><td class="p-2 font-mono">crianca</td><td class="p-2">Dono do plano</td></tr><tr><td class="p-2 font-mono">origem</td><td class="p-2">Automático / Manual</td></tr><tr><td class="p-2 font-mono">status</td><td class="p-2">Ativo / Arquivado</td></tr></tbody></table></div>
+                    <div class="table-container"><table class="w-full text-sm"><thead><tr><th colspan="2" class="p-3 bg-nuvem-suave font-bold">PlanoItem</th></tr></thead><tbody><tr><td class="p-2 font-mono">plano</td><td class="p-2">Plano pai</td></tr><tr><td class="p-2 font-mono">exercicio</td><td class="p-2">Exercício sugerido</td></tr><tr><td class="p-2 font-mono">fase</td><td class="p-2">A / B / C</td></tr><tr><td class="p-2 font-mono">status</td><td class="p-2">Planejado / Em Curso...</td></tr></tbody></table></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SLIDE 44: BD - SESSAO, ASSINATURA -->
+        <section class="presentation-slide bg-nuvem-suave layout-spacious">
+             <div class="w-full max-w-6xl mx-auto">
+                 <div data-animate class="mb-8"><h3 class="text-2xl font-bold text-grafite text-center">Tabelas: Sessão, Tentativa, Assinatura</h3></div>
+                 <div data-animate class="grid md:grid-cols-3 gap-6">
+                    <div class="table-container"><table class="w-full text-sm"><thead><tr><th colspan="2" class="p-3 bg-white font-bold">Sessao</th></tr></thead><tbody><tr><td class="p-2 font-mono">crianca</td><td class="p-2">Quem treinou</td></tr><tr><td class="p-2 font-mono">data</td><td class="p-2">Quando ocorreu</td></tr></tbody></table></div>
+                    <div class="table-container"><table class="w-full text-sm"><thead><tr><th colspan="2" class="p-3 bg-white font-bold">Tentativa</th></tr></thead><tbody><tr><td class="p-2 font-mono">sessao</td><td class="p-2">Sessão pai</td></tr><tr><td class="p-2 font-mono">sucesso</td><td class="p-2">✓ / ✗</td></tr></tbody></table></div>
+                    <div class="table-container"><table class="w-full text-sm"><thead><tr><th colspan="2" class="p-3 bg-white font-bold">Assinatura</th></tr></thead><tbody><tr><td class="p-2 font-mono">usuario</td><td class="p-2">Dono</td></tr><tr><td class="p-2 font-mono">plano</td><td class="p-2">Gratuito / Premium</td></tr></tbody></table></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SLIDE 45: BD - OPTION SETS & RELACIONAMENTOS -->
+        <section class="presentation-slide bg-white layout-spacious">
+            <div data-animate class="w-full max-w-5xl mx-auto prose lg:prose-xl">
+                <h2 class="text-grafite text-center !mb-8">Option Sets e Relacionamentos</h2>
+                <h4>Option Sets</h4>
+                <p>Conjuntos de opções predefinidas para garantir a consistência dos dados, como: <strong>Area</strong> (Comunicação, Social, etc.), <strong>FaixaEtaria</strong> (0–6m, 6–12m, etc.), <strong>Marcacao</strong> (A, B, C, NV), <strong>StatusPublicacao</strong> (Rascunho, Publicado, etc.).</p>
+                <h4>Relacionamentos</h4>
+                <p>A estrutura é relacional: Um <strong>User</strong> gerencia várias <strong>Crianças</strong>. Uma <strong>Criança</strong> possui várias <strong>ChecklistExecucoes</strong>. Uma <strong>ChecklistExecucao</strong> agrupa várias <strong>ChecklistItemRespostas</strong>, que origina um <strong>Plano</strong> com vários <strong>PlanoItems</strong>, onde cada um é treinado em <strong>Sessoes</strong> com <strong>Tentativas</strong>.</p>
+            </div>
+        </section>
+        
+        <!-- SLIDE 46: ESTILOS VISUAIS -->
+        <section class="presentation-slide bg-grafite text-white layout-spacious">
+             <div class="w-full max-w-6xl mx-auto">
+                <h2 data-animate class="text-4xl md:text-5xl font-bold text-center mb-16">Estilos Visuais</h2>
+                <div data-animate class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-3xl font-bold mb-4 text-verde-apoio">Tipografia</h3>
+                        <div class="flex items-center gap-6">
+                            <div>
+                                <p class="text-white/80">Ícone: Trilha ascendente (A•B•C) com seta, simbolizando progresso.</p>
+                                <p class="text-white/80 mt-2">Fonte: <span class="font-bold bg-white/10 px-2 py-1 rounded">Inter</span>, para legibilidade e amigabilidade.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div>
+                        <h3 class="text-3xl font-bold mb-4 text-coral-progresso">Paleta de Cores (Sugestão)</h3>
+                        <div class="mt-6 flex flex-wrap gap-4 items-center">
+                            <div class="text-center"><div class="color-swatch mx-auto" style="background-color: #2563EB;"></div><span class="text-xs">Confiança</span></div>
+                            <div class="text-center"><div class="color-swatch mx-auto" style="background-color: #10B981;"></div><span class="text-xs">Apoio</span></div>
+                            <div class="text-center"><div class="color-swatch mx-auto" style="background-color: #FF8A5B;"></div><span class="text-xs">Progresso</span></div>
+                            <div class="text-center"><div class="color-swatch mx-auto" style="background-color: #F8FAFC;"></div><span class="text-xs">Fundo</span></div>
+                            <div class="text-center"><div class="color-swatch mx-auto" style="background-color: #1F2937; border: 1px solid #4B5563;"></div><span class="text-xs">Texto</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 47: ROADMAP -->
+        <section class="presentation-slide bg-azul-confianca text-white layout-spacious text-center">
+            <div data-animate class="prose prose-xl prose-invert max-w-5xl mx-auto">
+                <h2 class="!text-white">Roadmap de 3 Meses</h2>
+                <p>Plano de execução para lançamento da v1.</p>
+            </div>
+        </section>
+        
+        <!-- SLIDE 48: ROADMAP - MÊS 1 -->
+        <section class="presentation-slide bg-white layout-spacious">
+            <div class="w-full max-w-6xl mx-auto">
+                <h2 data-animate class="text-4xl md:text-5xl font-bold text-grafite text-center mb-10">Roadmap: Mês 1 - Estruturação e Núcleo</h2>
+                <div data-animate class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div class="persona-card !p-4"><h4 class="font-bold">Semana 1</h4><p class="text-sm mt-2">Planejamento da arquitetura de BD. Modelagem de dados e wireframes.</p></div>
+                    <div class="persona-card !p-4"><h4 class="font-bold">Semana 2</h4><p class="text-sm mt-2">Implementação de login (email, social) e cadastro de crianças.</p></div>
+                    <div class="persona-card !p-4"><h4 class="font-bold">Semana 3</h4><p class="text-sm mt-2">Triagem relâmpago e checklists com marcação A/B/C/NV.</p></div>
+                    <div class="persona-card !p-4"><h4 class="font-bold">Semana 4</h4><p class="text-sm mt-2">Lógica de avanço/recuo e geração automática do plano de exercícios.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 49: ROADMAP - MÊS 2 -->
+        <section class="presentation-slide bg-nuvem-suave layout-spacious">
+            <div class="w-full max-w-6xl mx-auto">
+                <h2 data-animate class="text-4xl md:text-5xl font-bold text-grafite text-center mb-10">Roadmap: Mês 2 - Execução e Relatórios</h2>
+                 <div data-animate class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div class="persona-card !p-4"><h4 class="font-bold">Semana 5</h4><p class="text-sm mt-2">Execução de exercícios (passo a passo, vídeo) e registro de sessões.</p></div>
+                    <div class="persona-card !p-4"><h4 class="font-bold">Semana 6</h4><p class="text-sm mt-2">Histórico por criança e lógica de progressão automática (ex: ≥80%).</p></div>
+                    <div class="persona-card !p-4"><h4 class="font-bold">Semana 7</h4><p class="text-sm mt-2">Relatórios por faixa e área (A/B/C) e resumo de habilidades recentes.</p></div>
+                    <div class="persona-card !p-4"><h4 class="font-bold">Semana 8</h4><p class="text-sm mt-2">Ajustes visuais, de acessibilidade e refino do fluxo completo.</p></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SLIDE 50: ROADMAP - MÊS 3 -->
+        <section class="presentation-slide bg-white layout-spacious">
+            <div class="w-full max-w-6xl mx-auto">
+                <h2 data-animate class="text-4xl md:text-5xl font-bold text-grafite text-center mb-10">Roadmap: Mês 3 - Premium e Finalização</h2>
+                <div data-animate class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div class="persona-card !p-4"><h4 class="font-bold">Semana 9</h4><p class="text-sm mt-2">Lógica freemium: recursos básicos vs premium. Avisos de recursos bloqueados.</p></div>
+                    <div class="persona-card !p-4"><h4 class="font-bold">Semana 10</h4><p class="text-sm mt-2">Integração com Checkout/Portal web e reconhecimento do status premium no app.</p></div>
+                    <div class="persona-card !p-4"><h4 class="font-bold">Semana 11</h4><p class="text-sm mt-2">CRUD de exercícios no Admin. Upload de vídeos e publicação.</p></div>
+                    <div class="persona-card !p-4"><h4 class="font-bold">Semana 12</h4><p class="text-sm mt-2">Testes finais, política de privacidade, LGPD, e preparo para submissão.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 51: ROADMAP - PÓS-ENTREGA -->
+        <section class="presentation-slide bg-nuvem-suave layout-spacious">
+            <div data-animate class="w-full max-w-5xl mx-auto prose lg:prose-xl">
+                <h2 class="text-grafite text-center !mb-8">Pós-Entrega e Acompanhamento</h2>
+                <h4>Publicação nas Lojas (Semanas 13 a 15)</h4>
+                <ul>
+                    <li>Geração do APK (Android) e IPA (iOS) com ferramenta Bubble.</li>
+                    <li>Configuração de ícone, nome e categorias.</li>
+                    <li>Submissão no TestFlight (Apple) e Google Play Console.</li>
+                    <li>Acompanhamento da aprovação (pode levar de 5 a 10 dias úteis).</li>
+                </ul>
+                <h4>Acompanhamento Pós-Lançamento (60 Dias)</h4>
+                <p>Incluso: Correção de bugs reportados por usuários e ajustes de usabilidade de baixa complexidade.</p>
+            </div>
+        </section>
+
+        <!-- SLIDE 52: PRÓXIMOS PASSOS E PERGUNTAS -->
+        <section class="presentation-slide bg-azul-confianca text-white flex-col justify-center items-center text-center">
+            <div data-animate>
+                <img src="assets/DevNoFlow.png" alt="Avance Kids Logo" class="h-20 mx-auto filter invert brightness-0">
+            </div>
+            <h2 data-animate class="text-5xl md:text-7xl font-bold mt-6">Do Planejamento à Execução</h2>
+            <div data-animate class="mt-12">
+                <h3 class="text-2xl font-semibold">Aguardo o feedback para iniciarmos.</h3>
+            </div>
+        </section>
+        
+    </main>
+
+    <div id="presentation-navigation" class="fixed bottom-4 left-1/2 -translate-x-1/2 z-10 flex items-center gap-2.5 px-2.5 py-1 rounded-full bg-black/20 backdrop-blur-sm transition-opacity duration-300">
+        <button id="presentation-prev-slide" class="p-1 rounded-full hover:bg-white/10 transition-colors duration-200 disabled:opacity-30 disabled:cursor-not-allowed">
+            <i data-lucide="chevron-left" class="w-4 h-4 text-white/80"></i>
+        </button>
+        <div id="presentation-dots" class="flex gap-1.5 items-center"></div>
+        <button id="presentation-next-slide" class="p-1 rounded-full hover:bg-white/10 transition-colors duration-200 disabled:opacity-30 disabled:cursor-not-allowed">
+            <i data-lucide="chevron-right" class="w-4 h-4 text-white/80"></i>
+        </button>
+    </div>
+
+    <script src="presentation.js"></script>
+</body>
+</html>

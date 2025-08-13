@@ -1,0 +1,183 @@
+:root {
+    --azul-confianca: #2563EB;
+    --verde-apoio: #10B981;
+    --coral-progresso: #FF8A5B;
+    --nuvem-suave: #F8FAFC;
+    --grafite: #1F2937;
+    --grafite-light: #4B5563;
+    --grafite-xlight: #E5E7EB;
+}
+
+body {
+    background-color: var(--nuvem-suave);
+    color: var(--grafite);
+}
+
+.bg-azul-confianca { background-color: var(--azul-confianca); }
+.text-azul-confianca { color: var(--azul-confianca); }
+.border-azul-confianca { border-color: var(--azul-confianca); }
+
+.bg-verde-apoio { background-color: var(--verde-apoio); }
+.text-verde-apoio { color: var(--verde-apoio); }
+
+.bg-coral-progresso { background-color: var(--coral-progresso); }
+.text-coral-progresso { color: var(--coral-progresso); }
+.border-coral-progresso { border-color: var(--coral-progresso); }
+
+.bg-nuvem-suave { background-color: var(--nuvem-suave); }
+.bg-grafite { background-color: var(--grafite); }
+.text-grafite { color: var(--grafite); }
+
+/* Slide 3: Problem */
+.problem-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.problem-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+/* Slide 4: Solution Mockup */
+.solution-mockup {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    overflow: hidden;
+    border: 1px solid var(--grafite-xlight);
+    width: 100%;
+    max-width: 500px;
+}
+.mockup-header {
+    background-color: var(--grafite-xlight);
+    padding: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+}
+.mockup-header .dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 9999px;
+    background-color: #D1D5DB;
+}
+.mockup-body { display: flex; height: 300px; }
+.mockup-sidebar {
+    background-color: var(--nuvem-suave);
+    width: 140px;
+    padding: 1rem;
+    border-right: 1px solid var(--grafite-xlight);
+}
+.menu-item {
+    font-size: 0.875rem;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    color: var(--grafite-light);
+}
+.menu-item.active {
+    background-color: var(--azul-confianca);
+    color: white;
+    font-weight: 500;
+}
+.mockup-content { flex: 1; padding: 1rem; }
+.chart-bar-container { display: flex; height: 120px; gap: 0.75rem; align-items: flex-end; }
+.chart-bar { flex: 1; background-color: var(--grafite-xlight); border-radius: 0.25rem; }
+.card-row { display: flex; gap: 0.75rem; }
+.info-card { flex: 1; background-color: var(--nuvem-suave); padding: 0.75rem; border-radius: 0.375rem; font-size: 0.875rem; text-align: center; color: var(--grafite); }
+
+/* Slide 5: Features */
+.feature-item { display: flex; align-items: flex-start; gap: 1rem; }
+.feature-number {
+    flex-shrink: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+/* Slide 6: User Flow */
+.user-flow-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.flow-step { flex-basis: 150px; flex-grow: 1; }
+.flow-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.flow-icon > i { width: 2rem; height: 2rem; }
+.flow-arrow { color: var(--grafite-xlight); }
+.flow-arrow > i { width: 2rem; height: 2rem; }
+@media (max-width: 1024px) {
+    .flow-arrow { display: none; }
+    .user-flow-container { justify-content: center; }
+}
+
+/* Slide 7: Personas */
+.persona-card {
+    background-color: var(--nuvem-suave);
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+/* Slide 8: Tech & Visuals */
+.tech-item h4 { border-left: 3px solid var(--verde-apoio); padding-left: 0.75rem; }
+.color-swatch { width: 2.5rem; height: 2.5rem; border-radius: 9999px; }
+
+/* Slide 9 & 10: Tables */
+.table-container { 
+    background-color: white; 
+    border-radius: 0.75rem; 
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05); 
+    overflow: hidden;
+}
+.business-model-table th, .business-model-table td,
+.roadmap-table th, .roadmap-table td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid var(--grafite-xlight);
+}
+.business-model-table thead, .roadmap-table thead {
+    background-color: var(--nuvem-suave);
+}
+.business-model-table th, .roadmap-table th {
+    font-weight: 600;
+    color: var(--grafite);
+}
+.business-model-table td { color: var(--grafite-light); }
+.business-model-table tbody tr:last-child td,
+.roadmap-table tbody tr:last-child td { border-bottom: none; }
+.business-model-table td:nth-child(2), .business-model-table td:nth-child(3) { text-align: center; }
+
+/* Slide 11: Metrics */
+.metric-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border-left: 4px solid;
+    border-color: var(--grafite-xlight);
+}
+.metric-card .text-azul-confianca { border-color: var(--azul-confianca); }
+.metric-card .text-coral-progresso { border-color: var(--coral-progresso); }
+.metric-card .text-verde-apoio { border-color: var(--verde-apoio); }
+.metric-card .text-yellow-500 { border-color: #FBBF24; }
+.metric-card .text-purple-500 { border-color: #A855F7; }
