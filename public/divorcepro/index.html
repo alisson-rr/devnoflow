@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DivorcePro - Online Divorce Platform for Florida</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="dnf.png" alt="DNF Logo" class="logo-img">
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Project</a>
+                <a href="#overview" class="nav-link">Overview</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#tech" class="nav-link">Technology</a>
+                <a href="#screens" class="nav-link">User Flow</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    DivorcePro
+                </h1>
+                <p class="hero-description">
+                    An online platform that simplifies the divorce process for Florida residents. We guide you through every step – from eligibility check to final judgment delivery – in an accessible, secure, and digital way.
+                </p>
+            </div>
+            <div class="hero-image">
+                <div class="project-showcase">
+                    <div class="showcase-card">
+                        <div class="showcase-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Complete Platform</h3>
+                        <p>Responsive web app with Bubble + Supabase</p>
+                    </div>
+                    <div class="showcase-card">
+                        <div class="showcase-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>1,000 Users</h3>
+                        <p>Secure concurrent support</p>
+                    </div>
+                    <div class="showcase-card">
+                        <div class="showcase-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>30 Cases</h3>
+                        <p>First target</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-particles"></div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Project Overview</h2>
+                <p>DivorcePro - Online Divorce Platform</p>
+            </div>
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h3>DivorcePro is an online platform that simplifies the divorce process</h3>
+                    <p>The problem it solves is the bureaucracy and high cost of traditional divorce proceedings. Instead of dealing with expensive lawyers and confusing paperwork, clients have a clear, automated flow supported by legal assistants.</p>
+                    
+                    <p>The timing is relevant because there's growing demand for digital legal services, with document recognition, electronic filing, and remote assistance expanding across the US.</p>
+                    
+                    <p><strong>The primary target audience is married adults in Florida who want an uncontested, fast, and affordable divorce.</strong></p>
+                </div>
+                <div class="overview-stats">
+                    <div class="stat-card">
+                        <h4>v1 Objectives</h4>
+                        <ul>
+                            <li>Validate whether clients adopt the 100% online flow for simple divorce</li>
+                            <li>Enable automatic and secure petition generation and filing</li>
+                            <li>Collect feedback on dashboard usability and process clarity</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personas Section -->
+    <section class="personas-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Priority Personas</h2>
+                <p>Meet the main user profiles of DivorcePro</p>
+            </div>
+            <div class="personas-grid">
+                <div class="persona-card">
+                    <h4>Married Adults in Florida</h4>
+                    <p>Who want an uncontested, fast, and affordable divorce.</p>
+                </div>
+                <div class="persona-card">
+                    <h4>Users with Limited Legal Experience</h4>
+                    <p>Seeking online convenience and simplified processes.</p>
+                </div>
+                <div class="persona-card">
+                    <h4>People Who Value Digital Convenience</h4>
+                    <p>Documents, payments, and tracking through online portal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Essential Features (MVP)</h2>
+                <p>All features planned for the first version</p>
+            </div>
+            <div class="features-categories">
+                <div class="feature-category">
+                    <h3><i class="fas fa-check-circle"></i> Eligibility Check</h3>
+                    <ul>
+                        <li>Quick form (questions like: "Are you married in Florida?", "Do you have children?", "Is the divorce contested?")</li>
+                        <li>Automatic result: "Eligible" → proceed to payment / "Not eligible" → message with referral</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-category">
+                    <h3><i class="fas fa-file-alt"></i> Document Preparation</h3>
+                    <ul>
+                        <li>Guided online questionnaire (simplified questions)</li>
+                        <li>Automatic generation of petition and required forms</li>
+                        <li>Final review by legal assistant before submission</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-category">
+                    <h3><i class="fas fa-certificate"></i> Compliance and Online Notarization</h3>
+                    <ul>
+                        <li>Secure area for document upload (affidavits)</li>
+                        <li>Final file review</li>
+                        <li>Integration with e-notarization service (NotaryCam or Proof)</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-category">
+                    <h3><i class="fas fa-gavel"></i> Court Filing</h3>
+                    <ul>
+                        <li>Integration with e-filing system via USLegalPro API</li>
+                        <li>Document submission by our team</li>
+                        <li>Automatic updates on dashboard and via email</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-category">
+                    <h3><i class="fas fa-award"></i> Divorce Decree Delivery</h3>
+                    <ul>
+                        <li>Receipt and availability of final judgment</li>
+                        <li>Direct download on portal</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-category">
+                    <h3><i class="fas fa-tachometer-alt"></i> Client Dashboard</h3>
+                    <ul>
+                        <li>Secure login</li>
+                        <li>Progress visualization (steps 1 to 5)</li>
+                        <li>Document upload/download</li>
+                        <li>Status notifications (filing, next steps)</li>
+                        <li>Option to upgrade to Premium 1:1 service</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-category">
+                    <h3><i class="fas fa-credit-card"></i> Payments and Plans</h3>
+                    <ul>
+                        <li>Stripe integration</li>
+                        <li>One-time payment (flat fee) or installments</li>
+                        <li>Upsell: "Upgrade to Premium 1:1" button on checkout and dashboard</li>
+                        <li>Premium: option to schedule virtual meeting and concierge support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech" class="tech">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical Requirements</h2>
+                <p>Technology stack and necessary integrations</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Platform</h3>
+                    <p><strong>Responsive web app</strong></p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Technology</h3>
+                    <p><strong>Bubble + Supabase</strong></p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3>E-Notarization</h3>
+                    <p><strong>NotaryCam or Proof</strong></p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3>Court Filing</h3>
+                    <p><strong>USLegalPro API</strong></p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Payments</h3>
+                    <p><strong>Stripe</strong></p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Language</h3>
+                    <p><strong>English</strong> (initial)</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Capacity</h3>
+                    <p>Support for up to <strong>1,000 active users</strong></p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security</h3>
+                    <p><strong>High level</strong> - encryption and secure authentication</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screens Section -->
+    <section id="screens" class="screens">
+        <div class="container">
+            <div class="section-header">
+                <h2>Main User Flow</h2>
+                <p>Complete online divorce process</p>
+            </div>
+            <div class="screens-grid">
+                <div class="screen-category">
+                    <h3>1. Website Access</h3>
+                    <ul>
+                        <li><strong>Access the website</strong> and perform eligibility check</li>
+                    </ul>
+                </div>
+                
+                <div class="screen-category">
+                    <h3>2. Payment</h3>
+                    <ul>
+                        <li><strong>If eligible</strong>, make payment</li>
+                    </ul>
+                </div>
+                
+                <div class="screen-category">
+                    <h3>3. Questionnaire</h3>
+                    <ul>
+                        <li><strong>Fill out online questionnaire</strong></li>
+                    </ul>
+                </div>
+                
+                <div class="screen-category">
+                    <h3>4. Document Generation and Review</h3>
+                    <ul>
+                        <li><strong>Documents are generated</strong> and reviewed</li>
+                    </ul>
+                </div>
+                
+                <div class="screen-category">
+                    <h3>5. Upload and Notarization</h3>
+                    <ul>
+                        <li><strong>Upload affidavits</strong> → undergo online notarization</li>
+                    </ul>
+                </div>
+                
+                <div class="screen-category">
+                    <h3>6. Court Filing</h3>
+                    <ul>
+                        <li><strong>Our team files documents</strong> in court</li>
+                    </ul>
+                </div>
+                
+                <div class="screen-category">
+                    <h3>7. Tracking</h3>
+                    <ul>
+                        <li><strong>Client tracks progress</strong> via dashboard and email notifications</li>
+                    </ul>
+                </div>
+                
+                <div class="screen-category">
+                    <h3>8. Final Judgment Delivery</h3>
+                    <ul>
+                        <li><strong>Upon judgment issuance</strong>, client receives digital copy via portal</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="success-metrics">
+                <h3>v1 Success Metrics</h3>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <h4>30 completed cases</h4>
+                        <p>processed in the first month</p>
+                    </div>
+                    <div class="metric-card">
+                        <h4>25% conversion rate</h4>
+                        <p>from eligible to payment</p>
+                    </div>
+                    <div class="metric-card">
+                        <h4>Positive feedback</h4>
+                        <p>from 10 clients on process clarity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insights Section -->
+    <section class="insights">
+        <div class="container">
+            <div class="section-header">
+                <h2>Insights & Opportunities</h2>
+                <p>Analysis of the online divorce market and strategic positioning</p>
+            </div>
+            
+            <div class="insights-grid">
+                <div class="insight-category">
+                    <div class="insight-header">
+                        <div class="insight-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>1. Market Patterns</h3>
+                    </div>
+                    <div class="insight-content">
+                        <div class="insight-item">
+                            <h4>Guided questionnaire + form generation</h4>
+                            <p>Almost all offer guided questionnaire + form generation and filing instructions.</p>
+                        </div>
+                        <div class="insight-item">
+                            <h4>Few assume direct e-filing</h4>
+                            <p>Few assume direct e-filing and e-notarization as part of the flow.</p>
+                        </div>
+                        <div class="insight-item">
+                            <h4>Fast Florida Divorce stands out</h4>
+                            <p>Highlights RON + e-filing in the state as a competitive differentiator.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="insight-category">
+                    <div class="insight-header">
+                        <div class="insight-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>2. Experience Gaps</h3>
+                    </div>
+                    <div class="insight-content">
+                        <div class="insight-item">
+                            <h4>Visual status tracking absent</h4>
+                            <p>"Status tracking" visual of the case and progress panel are not evident in most competitors.</p>
+                        </div>
+                        <div class="insight-item">
+                            <h4>Friction reported in reviews</h4>
+                            <p>Friction is reported in reviews (unclear guidelines, extra charges, etc.).</p>
+                        </div>
+                        <div class="insight-item">
+                            <h4>Dashboard with steps 1-5</h4>
+                            <p>Strengthen the dashboard with steps 1-5, deadlines, and alerts, as your PRD proposes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="insight-category full-width">
+                    <div class="insight-header">
+                        <div class="insight-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>3. Actionable Differentiations for FL</h3>
+                    </div>
+                    <div class="differentials-grid">
+                        <div class="differential-card">
+                            <div class="differential-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h4>RON + E-filing Integrated</h4>
+                            <p>Integrate RON (NotaryCam/Proof) and e-filing (via USLegalPro) in the same flow, reducing time and anxiety as a competitive advantage.</p>
+                        </div>
+                        <div class="differential-card">
+                            <div class="differential-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h4>County Checklist</h4>
+                            <p>Highlight counties without a hearing (like Lee), offering clarity on the specific process for each region.</p>
+                        </div>
+                        <div class="differential-card">
+                            <div class="differential-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <h4>Cost Transparency</h4>
+                            <p>Clear messaging on costs (court fee ~US$400) from the start, avoiding surprises reported by competitors.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Section -->
+    <section class="design">
+        <div class="container">
+            <div class="design-grid">
+                <div class="design-category">
+                    <div class="section-header">
+                        <h2>Main Platform</h2>
+                        <p>Bubble (no-code) + Supabase (database)</p>
+                    </div>
+                    <div class="logo-details">
+                        <div class="logo-item">
+                            <h4>Name: DivorcePRO</h4>
+                        </div>
+                        <div class="logo-item">
+                            <h4>Typography</h4>
+                            <p>Modern and sans-serif, with clean and confident strokes (e.g., similar to Google Sans or Inter, conveying digital professionalism).</p>
+                        </div>
+                        <div class="logo-item">
+                            <h4>Complementary Icon</h4>
+                            <p>A stylized shield divided in half by a subtle line — symbolizing separation + legal protection.</p>
+                        </div>
+                        <div class="logo-item">
+                            <h4>Overall Style</h4>
+                            <p>Trustworthy, sober, and technological, conveying security and accessibility.</p>
+                        </div>
+                        <div class="logo-preview">
+                            <div class="logo-example">
+                                <img src="FAITH_LOGO.png" alt="FaithMatch+ Logo" class="faith-logo">
+                            </div>
+                            <p class="logo-description">Official DivorcePRO logo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="design-category">
+                    <div class="section-header">
+                        <h2>App Color Palette</h2>
+                        <p>Strategic color system</p>
+                    </div>
+                    <div class="color-palette">
+                        <div class="color-item">
+                            <div class="color-swatch" style="background-color: #2B4C7E;"></div>
+                            <div class="color-info">
+                                <h4>Justice Blue</h4>
+                                <p class="color-code">#2B4C7E</p>
+                                <p class="color-usage">Main buttons, top bar, action elements</p>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <div class="color-swatch" style="background-color: #F5F5F7; border: 2px solid #e2e8f0;"></div>
+                            <div class="color-info">
+                                <h4>Court Gray</h4>
+                                <p class="color-code">#F5F5F7</p>
+                                <p class="color-usage">Backgrounds, neutral areas</p>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <div class="color-swatch" style="background-color: #36B37E;"></div>
+                            <div class="color-info">
+                                <h4>Trust Green</h4>
+                                <p class="color-code">#36B37E</p>
+                                <p class="color-usage">Confirmations, positive statuses, success notifications</p>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <div class="color-swatch" style="background-color: #FF8B3D;"></div>
+                            <div class="color-info">
+                                <h4>Highlight Orange</h4>
+                                <p class="color-code">#FF8B3D</p>
+                                <p class="color-usage">Calls to action, premium upgrades, soft alerts</p>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <div class="color-swatch" style="background-color: #1C1C1C;"></div>
+                            <div class="color-info">
+                                <h4>Discreet Black</h4>
+                                <p class="color-code">#1C1C1C</p>
+                                <p class="color-usage">Text, titles, and icons</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Section -->
+    <section class="investment">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Investment</h2>
+                <p>Choose the ideal package for your project</p>
+            </div>
+            
+            <div class="investment-plans">
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>MVP Version</h3>
+                        <div class="plan-price">
+                            <span class="price-value">$1.997,00</span>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="feature-item">
+                            <h4>Eligibility Check</h4>
+                            <p>Quick form with basic questions</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Document Preparation</h4>
+                            <p>Guided online questionnaire and automatic form generation</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Compliance and Upload</h4>
+                            <p>Secure area for document upload (without e-notarization)</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Manual Court Filing</h4>
+                            <p>Instructions for manual filing by the client</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Basic Client Dashboard</h4>
+                            <p>Secure login, simple progress visualization</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Payments</h4>
+                            <p>Stripe integration - one-time or installment payment</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plan-card featured">   
+                    <div class="plan-header">
+                        <h3>Complete Version</h3>
+                        <div class="plan-price">
+                            <span class="price-value">$6.997,00</span>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="feature-item">
+                            <h4>Eligibility Check</h4>
+                            <p>Quick form with automatic result</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Document Preparation</h4>
+                            <p>Guided questionnaire + automatic generation + review by legal assistant</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Compliance and E-Notarization</h4>
+                            <p>Secure upload + integration with NotaryCam or Proof</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Automated Court Filing</h4>
+                            <p>E-filing via USLegalPro API + automatic updates</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Final Judgment Delivery</h4>
+                            <p>Digital download on portal</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Complete Dashboard</h4>
+                            <p>Progress visualization (steps 1-5), deadlines, alerts, and upgrade to Premium 1:1</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Advanced Payments</h4>
+                            <p>Stripe + Premium upsell + installments + cost transparency</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bonus-section">
+                <div class="bonus-header">
+                    <h3>🎁 Bonus closing in <span id="countdown-timer"></span></h3>
+                </div>
+                <div class="bonus-grid">
+                    <div class="bonus-item">
+                        <div class="bonus-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h4>WhatsApp Notifications</h4>
+                        <p>Real-time tracking, keeping clients always updated on each step of the process.</p>
+                    </div>
+                    <div class="bonus-item">
+                        <div class="bonus-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h4>Premium Support Guarantee (90 days)</h4>
+                        <p>Questions, follow-up, and priority support for greater peace of mind.</p>
+                    </div>
+                    <div class="bonus-item">
+                        <div class="bonus-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h4>AI Writing & Simple Review</h4>
+                        <p>Intelligent tool that helps generate short descriptions and fill out forms with greater agility and clarity.</p>
+                    </div>
+                </div>
+                
+                <div class="guarantee-section">
+                    <div class="guarantee-highlight">
+                        <div class="guarantee-icon">
+                            <i class="fas fa-shield-check"></i>
+                        </div>
+                        <h3>🛡️ 7-Day Satisfaction Guarantee</h3>
+                        <p><strong>Post-delivery:</strong> If you're not satisfied with the result, we offer a full refund within 7 days after project delivery.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="dnf.png" alt="DNF Logo" class="logo-img">
+                </div>
+                <div class="footer-links">
+                    <a href="#overview">Project</a>
+                    <a href="#features">Features</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://instagram.com/devnoflow" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/5551994408307" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Development Portfolio. DivorcePro project available for implementation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date();
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            tomorrow.setHours(23, 59, 59, 999);
+            
+            const timeLeft = tomorrow - now;
+            
+            if (timeLeft > 0) {
+                const hours = Math.floor(timeLeft / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+                
+                document.getElementById('countdown-timer').innerHTML = 
+                    `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            } else {
+                document.getElementById('countdown-timer').innerHTML = "EXPIRADO";
+            }
+        }
+        
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown(); // Initial call
+    </script>
+</body>
+</html>
