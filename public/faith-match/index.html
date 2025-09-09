@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaithMatch+ - Desenvolvimento de App de Relacionamentos Cristãos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="dnf.png" alt="DNF Logo" class="logo-img">
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Projeto</a>
+                <a href="#overview" class="nav-link">Visão Geral</a>
+                <a href="#features" class="nav-link">Funcionalidades</a>
+                <a href="#tech" class="nav-link">Tecnologias</a>
+                <a href="#screens" class="nav-link">Telas</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    App de relacionamento cristão
+                </h1>
+                <p class="hero-description">
+                    Projeto completo de aplicativo de relacionamento exclusivo para cristãos, com foco em promover conexões seguras, saudáveis e alinhadas a princípios de fé. Inspirado no modelo do Tinder, mas adaptado ao público evangélico e católico.
+                </p>
+            </div>
+            <div class="hero-image">
+                <div class="project-showcase">
+                    <div class="showcase-card">
+                        <div class="showcase-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>App Completo</h3>
+                        <p>Desenvolvimento full-stack com Bubble + Supabase</p>
+                    </div>
+                    <div class="showcase-card">
+                        <div class="showcase-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>+10.000 Usuários</h3>
+                        <p>Suposta para o seu crescimento</p>
+                    </div>
+                    <div class="showcase-card">
+                        <div class="showcase-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>1.000+ Matches</h3>
+                        <p>Objetivo de engajamento</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-particles"></div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visão Geral do Projeto</h2>
+                <p>FaithMatch+ - App de Relacionamentos Cristãos</p>
+            </div>
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h3>O FaithMatch+ é um aplicativo de relacionamento exclusivo para cristãos</h3>
+                    <p>Com foco em promover conexões seguras, saudáveis e alinhadas a princípios de fé. Inspirado no modelo do Tinder, mas adaptado ao público evangélico e católico, o app oferece uma experiência centrada em valores cristãos, evitando a superficialidade e promovendo relacionamentos de caráter.</p>
+                    
+                    <p>Além da funcionalidade de encontro, o app agrega valor com devocionais, cursos e conteúdos educativos sobre vida cristã e relacionamentos, tornando-se um ambiente digital que vai além da paquera: um espaço para crescimento espiritual e pessoal.</p>
+                    
+                    <p><strong>O público-alvo principal são jovens e adultos cristãos que buscam um relacionamento sério, fundamentado em valores compartilhados.</strong></p>
+                </div>
+                <div class="overview-stats">
+                    <div class="stat-card">
+                        <h4>Objetivos da v1</h4>
+                        <ul>
+                            <li>Permitir encontros baseados em fé e proximidade geográfica</li>
+                            <li>Validar modelo de assinatura como fonte de receita</li>
+                            <li>Oferecer ambiente seguro com ferramentas de moderação</li>
+                            <li>Incluir diferenciais exclusivos (devocionais e cursos)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personas Section -->
+    <section class="personas-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Personas Prioritárias</h2>
+                <p>Conheça os principais perfis de usuários do FaithMatch+</p>
+            </div>
+            <div class="personas-grid">
+                <div class="persona-card">
+                    <h4>Jovens Cristãos (20–35 anos)</h4>
+                    <p>Que querem namoro sério, mas não se identificam com apps seculares.</p>
+                </div>
+                <div class="persona-card">
+                    <h4>Adultos Solteiros (30–45 anos)</h4>
+                    <p>Buscando um parceiro com princípios cristãos.</p>
+                </div>
+                <div class="persona-card">
+                    <h4>Usuários Premium</h4>
+                    <p>Que, além de encontrar alguém, desejam conteúdos educativos para fortalecer sua vida espiritual e afetiva.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Funcionalidades Essenciais (v1 – Completa)</h2>
+                <p>Todas as funcionalidades planejadas para a primeira versão</p>
+            </div>
+            <div class="features-categories">
+                <div class="feature-category">
+                    <h3><i class="fas fa-user-plus"></i> Cadastro e Login</h3>
+                    <ul>
+                        <li>Via e-mail, celular, Google, Facebook ou Instagram</li>
+                        <li>Verificação básica de conta</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-category">
+                    <h3><i class="fas fa-user-circle"></i> Perfil do Usuário</h3>
+                    <ul>
+                        <li>Nome, foto, idade, bio, denominação (evangélico/católico)</li>
+                        <li>Interesses e preferências de relacionamento</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-category">
+                    <h3><i class="fas fa-map-marker-alt"></i> Geolocalização</h3>
+                    <ul>
+                        <li>Sugestão de perfis próximos</li>
+                        <li>Filtro por distância e idade</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-category">
+                    <h3><i class="fas fa-heart"></i> Sistema de Interação</h3>
+                    <ul>
+                        <li>Curtir/ignorar perfis</li>
+                        <li>Match → chat liberado</li>
+                        <li>Modo Primo: só visível para quem o usuário curtiu</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-category">
+                    <h3><i class="fas fa-comments"></i> Chat</h3>
+                    <ul>
+                        <li>Mensagens apenas após match</li>
+                        <li>Envio de texto e emojis</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-category">
+                    <h3><i class="fas fa-shield-alt"></i> Privacidade e Segurança</h3>
+                    <ul>
+                        <li>Denúncia de usuários</li>
+                        <li>Bloquear perfil</li>
+                        <li>IA para detectar fotos ou mensagens inapropriadas</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-category">
+                    <h3><i class="fas fa-crown"></i> Planos de Assinatura</h3>
+                    <ul>
+                        <li><strong>Gratuito:</strong> até 10 curtidas/dia, acesso limitado a perfis</li>
+                        <li><strong>Premium:</strong> curtidas ilimitadas + ver quem curtiu + acesso gratuito a cursos</li>
+                        <li><strong>VIP:</strong> inclui tudo do Premium + privacidade avançada + conteúdos exclusivos</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-category">
+                    <h3><i class="fas fa-book-open"></i> Conteúdo Educacional</h3>
+                    <ul>
+                        <li>Devocionais diários (curtos, dentro do app)</li>
+                        <li>Cursos e videoaulas: Gratuitos para Premium/VIP, Pagos individualmente para usuários Free</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech" class="tech">
+        <div class="container">
+            <div class="section-header">
+                <h2>Requisitos Técnicos</h2>
+                <p>Stack tecnológica e especificações do projeto</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Plataforma</h3>
+                    <p><strong>Bubble</strong> (versão mobile nativa)</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Banco de Dados</h3>
+                    <p><strong>Supabase</strong> (autenticação + escalabilidade)</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Integrações</h3>
+                    <p><strong>n8n</strong> (notificações, automações, suporte)</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>IA</h3>
+                    <p>Moderação de fotos/textos + alertas de comportamento suspeito</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Idiomas</h3>
+                    <p><strong>Português</strong> (v1)</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Capacidade</h3>
+                    <p>Suporte a até <strong>10.000 usuários</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screens Section -->
+    <section id="screens" class="screens">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mapa de Telas</h2>
+                <p>Todas as telas planejadas para o aplicativo</p>
+            </div>
+            <div class="screens-grid">
+                <div class="screen-category">
+                    <h3>Autenticação</h3>
+                    <ul>
+                        <li><strong>Tela de Boas-vindas</strong> – Apresenta o app e direciona para login/cadastro</li>
+                        <li><strong>Tela de Cadastro/Login</strong> – Criar conta ou acessar com redes sociais</li>
+                        <li><strong>Tela de Completar Perfil</strong> – Usuário preenche informações básicas e preferências</li>
+                    </ul>
+                </div>
+                
+                <div class="screen-category">
+                    <h3>Core do App</h3>
+                    <ul>
+                        <li><strong>Tela Inicial (Descobrir Perfis)</strong> – Feed de perfis por proximidade (modelo swipe)</li>
+                        <li><strong>Tela de Match</strong> – Confirmação de quando dois usuários se curtirem</li>
+                        <li><strong>Tela de Chat</strong> – Conversas com matches</li>
+                    </ul>
+                </div>
+                
+                <div class="screen-category">
+                    <h3>Conteúdo</h3>
+                    <ul>
+                        <li><strong>Tela de Devocionais</strong> – Acesso a conteúdo diário (premium/free limitado)</li>
+                        <li><strong>Tela de Cursos</strong> – Lista de cursos disponíveis (premium gratuito, free pago)</li>
+                    </ul>
+                </div>
+                
+                <div class="screen-category">
+                    <h3>Monetização</h3>
+                    <ul>
+                        <li><strong>Tela de Assinatura</strong> – Planos Free, Premium e VIP, com comparação de benefícios</li>
+                    </ul>
+                </div>
+                
+                <div class="screen-category">
+                    <h3>Perfil e Configurações</h3>
+                    <ul>
+                        <li><strong>Tela de Perfil do Usuário</strong> – Visualização e edição do próprio perfil</li>
+                        <li><strong>Tela de Perfil de Outro Usuário</strong> – Exibe informações detalhadas de um perfil antes de interagir</li>
+                        <li><strong>Tela de Configurações e Segurança</strong> – Ajustes de conta, privacidade, bloqueio e denúncia</li>
+                    </ul>
+                </div>
+                
+                <div class="screen-category">
+                    <h3>Suporte e Admin</h3>
+                    <ul>
+                        <li><strong>Tela de Suporte</strong> – Abertura de chamados e FAQ</li>
+                        <li><strong>Painel Administrativo (Web)</strong> – Métricas de usuários, segurança e receita (uso restrito a administradores)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="success-metrics">
+                <h3>Indicadores de Sucesso da v1</h3>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <h4>5.000 cadastros</h4>
+                        <p>no primeiro trimestre</p>
+                    </div>
+                    <div class="metric-card">
+                        <h4>1.000+ matches</h4>
+                        <p>no período</p>
+                    </div>
+                    <div class="metric-card">
+                        <h4>5% conversão</h4>
+                        <p>para Premium/VIP</p>
+                    </div>
+                    <div class="metric-card">
+                        <h4>70% usuários ativos</h4>
+                        <p>abrindo app 2x/semana</p>
+                    </div>
+                    <div class="metric-card">
+                        <h4>80% denúncias</h4>
+                        <p>resolvidas em <24h</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insights Section -->
+    <section class="insights">
+        <div class="container">
+            <div class="section-header">
+                <h2>Insights & Oportunidades</h2>
+                <p>Análise do mercado nacional e posicionamento estratégico</p>
+            </div>
+            
+            <div class="insights-grid">
+                <div class="insight-category">
+                    <div class="insight-header">
+                        <div class="insight-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>1. Padrões do Mercado Nacional</h3>
+                    </div>
+                    <div class="insight-content">
+                        <div class="insight-item">
+                            <h4>Modelo Tinder domina</h4>
+                            <p>Swipe, curtidas, match e chat são padrão no mercado.</p>
+                        </div>
+                        <div class="insight-item">
+                            <h4>Freemium é regra</h4>
+                            <p>Limitado no gratuito (curtidas, chat) e planos pagos liberam extras.</p>
+                        </div>
+                        <div class="insight-item">
+                            <h4>Alta adesão inicial</h4>
+                            <p>Eden e Gospel Love têm mais de 1 milhão de downloads cada, mostrando forte demanda por dating cristão no Brasil.</p>
+                        </div>
+                        <div class="insight-item">
+                            <h4>Avaliações medianas (3,7–3,9)</h4>
+                            <p>Os apps são usados, mas há espaço para soluções que entreguem mais qualidade e menos frustração.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="insight-category">
+                    <div class="insight-header">
+                        <div class="insight-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>2. Gaps de Mercado</h3>
+                    </div>
+                    <div class="insight-content">
+                        <div class="insight-item">
+                            <h4>Falta de Conteúdo Cristão</h4>
+                            <p>Nenhum dos nacionais combina namoro com devocionais, cursos ou materiais educativos.</p>
+                        </div>
+                        <div class="insight-item">
+                            <h4>Segurança frágil</h4>
+                            <p>Críticas comuns sobre perfis falsos e pouca verificação; só o SALT (internacional) se destaca em validação facial.</p>
+                        </div>
+                        <div class="insight-item">
+                            <h4>Pouca diferenciação de proposta</h4>
+                            <p>Todos competem apenas como "Tinder cristão", sem algo que engaje além do match.</p>
+                        </div>
+                        <div class="insight-item">
+                            <h4>Feedback ignorado</h4>
+                            <p>Usuários reclamam de bugs e falta de evolução (ex.: dificuldade em ver quem está online).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="insight-category full-width">
+                    <div class="insight-header">
+                        <div class="insight-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>3. Diferenciais Estratégicos do FaithMatch+</h3>
+                    </div>
+                    <div class="differentials-grid">
+                        <div class="differential-card">
+                            <div class="differential-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h4>Namoro + Espiritualidade</h4>
+                            <p>Match com propósito + devocionais diários + cursos exclusivos. Gera engajamento contínuo mesmo sem novos matches.</p>
+                        </div>
+                        <div class="differential-card">
+                            <div class="differential-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>Segurança Avançada com IA</h4>
+                            <p>Verificação de fotos e textos + bloqueio de perfis falsos. Modo VIP invisível → diferencial de privacidade ainda inexplorado no Brasil.</p>
+                        </div>
+                        <div class="differential-card">
+                            <div class="differential-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <h4>Assinatura Premium com Valor Agregado</h4>
+                            <p>Diferente dos concorrentes, que só liberam curtidas ilimitadas, aqui o Premium oferece conteúdo educativo (aulas, cursos, devocionais).</p>
+                        </div>
+                        <div class="differential-card">
+                            <div class="differential-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>Ambiente Cristão Seguro e Confiável</h4>
+                            <p>Posicionamento claro contra a "superficialidade" dos apps seculares. Ferramentas de denúncia rápidas + monitoramento &lt;24h.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Section -->
+    <section class="design">
+        <div class="container">
+            <div class="design-grid">
+                <div class="design-category">
+                    <div class="section-header">
+                        <h2>Logotipo Conceitual</h2>
+                        <p>Identidade visual do FaithMatch+</p>
+                    </div>
+                    <div class="logo-details">
+                        <div class="logo-item">
+                            <h4>Nome: FaithMatch+</h4>
+                        </div>
+                        <div class="logo-item">
+                            <h4>Tipografia</h4>
+                            <p>Sans-serif arredondada, limpa e moderna, transmitindo acolhimento e confiança.</p>
+                        </div>
+                        <div class="logo-item">
+                            <h4>Ícone complementar</h4>
+                            <p>Um coração estilizado com uma pequena cruz integrada no centro → união de amor + fé.</p>
+                        </div>
+                        <div class="logo-item">
+                            <h4>Estilo geral</h4>
+                            <p>Elegante, caloroso e confiável, sem perder o frescor de um app jovem.</p>
+                        </div>
+                        <div class="logo-preview">
+                            <div class="logo-example">
+                                <img src="FAITH_LOGO.png" alt="FaithMatch+ Logo" class="faith-logo">
+                            </div>
+                            <p class="logo-description">Logotipo oficial do FaithMatch+</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="design-category">
+                    <div class="section-header">
+                        <h2>Paleta de Cores do App</h2>
+                        <p>Sistema cromático estratégico</p>
+                    </div>
+                    <div class="color-palette">
+                        <div class="color-item">
+                            <div class="color-swatch" style="background-color: #3A6FF7;"></div>
+                            <div class="color-info">
+                                <h4>Azul Serenidade</h4>
+                                <p class="color-code">#3A6FF7</p>
+                                <p class="color-usage">Botões principais, destaque de links e CTAs</p>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <div class="color-swatch" style="background-color: #F27AA3;"></div>
+                            <div class="color-info">
+                                <h4>Rosa Esperança</h4>
+                                <p class="color-code">#F27AA3</p>
+                                <p class="color-usage">Elementos de interação (curtir, match)</p>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <div class="color-swatch" style="background-color: #FFFFFF; border: 2px solid #e2e8f0;"></div>
+                            <div class="color-info">
+                                <h4>Branco Pureza</h4>
+                                <p class="color-code">#FFFFFF</p>
+                                <p class="color-usage">Fundo principal, espaços de leitura</p>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <div class="color-swatch" style="background-color: #F6C344;"></div>
+                            <div class="color-info">
+                                <h4>Dourado Propósito</h4>
+                                <p class="color-code">#F6C344</p>
+                                <p class="color-usage">Selos premium, VIP e elementos de confiança</p>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <div class="color-swatch" style="background-color: #2E2E2E;"></div>
+                            <div class="color-info">
+                                <h4>Cinza Fé</h4>
+                                <p class="color-code">#2E2E2E</p>
+                                <p class="color-usage">Textos, títulos e contraste em fundos claros</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Section -->
+    <section class="investment">
+        <div class="container">
+            <div class="section-header">
+                <h2>O Investimento</h2>
+                <p>Escolha o pacote ideal para seu projeto</p>
+            </div>
+            
+            <div class="investment-plans">
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Versão MVP</h3>
+                        <div class="plan-price">
+                            <span class="price-value">6x R$2.997,00</span>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="feature-item">
+                            <h4>Cadastro & Login</h4>
+                            <p>E-mail, celular, Google</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Perfil do Usuário</h4>
+                            <p>Nome, idade, fotos, bio, denominação, preferências, cidade, interesses (limitado)</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Geolocalização</h4>
+                            <p>Sugestão de perfis próximos, filtro por idade/distância</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Interação</h4>
+                            <p>Curtir/ignorar, match libera chat</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Chat</h4>
+                            <p>Texto + emojis (após match)</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Privacidade & Segurança</h4>
+                            <p>Denúncia e bloqueio de perfis</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Planos de Assinatura</h4>
+                            <p>Free: 10 curtidas/dia<br>Premium: curtidas ilimitadas + ver quem curtiu</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Painel Administrativo</h4>
+                            <p>Até 6 métricas e filtros de baixa complexidade</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Painel Suporte</h4>
+                            <p>Opções bloqueio/suspensão, histórico de pagamentos, dados do usuário</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plan-card featured">   
+                    <div class="plan-header">
+                        <h3>Versão Completa</h3>
+                        <div class="plan-price">
+                            <span class="price-value">6x R$4.197,00</span>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="feature-item">
+                            <h4>Cadastro & Login</h4>
+                            <p>MVP + Instagram</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Perfil do Usuário</h4>
+                            <p>MVP + fotos com verificação, interesses avançados (tipo de relacionamento)</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Geolocalização</h4>
+                            <p>MVP + Filtros por interesse</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Interação</h4>
+                            <p>MVP + Modo Primo (visível só para curtidos)</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Chat</h4>
+                            <p>MVP + Envio de fotos com verificação</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Privacidade & Segurança</h4>
+                            <p>MVP + IA para flag de fotos/mensagens + privacidade avançada (VIP invisível)</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Planos de Assinatura</h4>
+                            <p>MVP + VIP (conteúdos exclusivos + invisibilidade até interagir)</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Conteúdo Educacional</h4>
+                            <p>Devocionais diários, cursos/videoaulas (incluídos no Premium/VIP, pagos no Free)</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Painel Administrativo</h4>
+                            <p>Métricas de usuários, matches, denúncias, receita, engajamento e filtros complexos</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Painel Suporte</h4>
+                            <p>MVP + Controle de chamados e métricas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bonus-section">
+                <div class="bonus-header">
+                    <h3>🎁 Bônus fechamento até segunda</h3>
+                </div>
+                <div class="bonus-grid">
+                    <div class="bonus-item">
+                        <div class="bonus-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h4>Devocional diário automático com IA</h4>
+                    </div>
+                    <div class="bonus-item">
+                        <div class="bonus-icon">
+                            <i class="fas fa-filter"></i>
+                        </div>
+                        <h4>Filtro de valores/interesses cristãos especiais</h4>
+                    </div>
+                    <div class="bonus-item">
+                        <div class="bonus-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h4>Selo de perfil verificado</h4>
+                    </div>
+                    <div class="bonus-item">
+                        <div class="bonus-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h4>Gamificação</h4>
+                        <p>Contador "X dias abrindo o app seguidos" (inspirado no TikTok)</p>
+                    </div>
+                    <div class="bonus-item">
+                        <div class="bonus-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h4>Mini Dashboard espiritual</h4>
+                        <p>"Você leu 7 devocionais esse mês ✨"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="dnf.png" alt="DNF Logo" class="logo-img">
+                </div>
+                <div class="footer-links">
+                    <a href="#overview">Projeto</a>
+                    <a href="#features">Funcionalidades</a>
+                    <a href="#tech">Tecnologias</a>
+                    <a href="#screens">Telas</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Portfólio de Desenvolvimento. Projeto FaithMatch+ disponível para implementação.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
