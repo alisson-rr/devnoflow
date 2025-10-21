@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impecare - Sistema de Gestão de Limpeza</title>
+    <link rel="stylesheet" href="/impecare/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="/impecare/dnf.png" alt="Impecare Logo" class="logo-img">
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Projeto</a>
+                <a href="#overview" class="nav-link">Visão Geral</a>
+                <a href="#features" class="nav-link">Funcionalidades</a>
+                <a href="#tech" class="nav-link">Tecnologia</a>
+                <a href="#screens" class="nav-link">Fluxo</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Impecare
+                </h1>
+                <p class="hero-description">
+                    Web app que automatiza o agendamento, distribuição e acompanhamento de serviços de limpeza recorrentes, conectando o time administrativo às cleaners e clientes em um único ambiente.
+                </p>
+            </div>
+            <div class="hero-image">
+                <div class="project-showcase">
+                    <div class="showcase-card">
+                        <div class="showcase-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Plataforma Completa</h3>
+                        <p>Web app responsivo com No Code</p>
+                    </div>
+                    <div class="showcase-card">
+                        <div class="showcase-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>200 Usuários</h3>
+                        <p>Admin + cleaners simultâneos</p>
+                    </div>
+                    <div class="showcase-card">
+                        <div class="showcase-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Automação Total</h3>
+                        <p>Jobs e pagamentos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-particles"></div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visão Geral do Projeto</h2>
+                <p>Impecare - Sistema de Gestão de Limpeza</p>
+            </div>
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h3>O Impecare automatiza a gestão de serviços de limpeza recorrentes</h3>
+                    <p>Hoje, pequenas e médias empresas de limpeza enfrentam processos manuais e demorados: planilhas para agendar jobs, mensagens dispersas com funcionárias e erros na gestão de pagamentos e escalas. O Impecare centraliza todas essas operações, garantindo controle, transparência e redução drástica do tempo gasto com tarefas administrativas.</p>
+                    
+                    <p>O app prioriza a eficiência operacional, o controle financeiro automatizado e a segurança de dados sensíveis dos clientes e funcionárias, criando uma base sólida para escalar a operação sem aumentar o custo administrativo.</p>
+                    
+                    <p><strong>A solução perfeita para empresas de limpeza que querem crescer sem perder o controle.</strong></p>
+                </div>
+                <div class="overview-stats">
+                    <div class="stat-card">
+                        <h4>Objetivos da v1</h4>
+                        <ul>
+                            <li>Validar o uso do sistema para controle e automação de agendamentos</li>
+                            <li>Reduzir tempo gasto pela administração em organização de jobs e pagamentos</li>
+                            <li>Permitir que cleaners tenham autonomia para selecionar e executar jobs</li>
+                            <li>Garantir cálculo financeiro automático sem planilhas externas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personas Section -->
+    <section class="personas-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Personas Prioritárias</h2>
+                <p>Conheça os principais perfis de usuários do Impecare</p>
+            </div>
+            <div class="personas-grid">
+                <div class="persona-card">
+                    <h4>Administrador(a) da Empresa</h4>
+                    <p>Responsável por cadastrar clientes, propriedades e cleaners, configurar recorrências e acompanhar status e finanças. Busca reduzir tempo gasto em tarefas administrativas.</p>
+                </div>
+                <div class="persona-card">
+                    <h4>Cleaner (Funcionária)</h4>
+                    <p>Visualiza e seleciona jobs disponíveis, confirma execução e envia registros (fotos, comentários, problemas). Busca autonomia e clareza nos agendamentos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Funcionalidades Essenciais (MVP)</h2>
+                <p>Todas as funcionalidades planejadas para a primeira versão</p>
+            </div>
+            <div class="features-categories">
+                <div class="feature-category">
+                    <h3><i class="fas fa-users-cog"></i> Administração</h3>
+                    <ul>
+                        <li>Cadastro e controle de clientes e propriedades</li>
+                        <li>Cadastro de cleaners com disponibilidade e valores</li>
+                        <li>Geração automática de jobs recorrentes</li>
+                        <li>Dashboard financeiro com margem de lucro</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-category">
+                    <h3><i class="fas fa-calendar-check"></i> Gestão de Jobs</h3>
+                    <ul>
+                        <li>Painel com lista filtrável por status (disponível, reservado, em progresso, concluído, pago)</li>
+                        <li>Configuração de jobs recorrentes (semanal, quinzenal, mensal)</li>
+                        <li>Controle de pagamento e saldo de cleaners</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-category">
+                    <h3><i class="fas fa-shield-alt"></i> Segurança e Links Temporários</h3>
+                    <ul>
+                        <li>Envio automático de informações do cliente via link temporário (24h antes do job)</li>
+                        <li>Criptografia básica para dados sensíveis</li>
+                        <li>Trilha de auditoria de acessos</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-category">
+                    <h3><i class="fas fa-broom"></i> Painel da Cleaner</h3>
+                    <ul>
+                        <li>Login e painel pessoal com acesso restrito</li>
+                        <li>Visualização de jobs disponíveis com data, local e valor</li>
+                        <li>Reserva de jobs e confirmação de execução</li>
+                        <li>Histórico de jobs e pagamentos futuros</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-category">
+                    <h3><i class="fas fa-camera"></i> Confirmação de Execução</h3>
+                    <ul>
+                        <li>Formulário pós-job com upload de fotos</li>
+                        <li>Campos de status, observações e problemas encontrados</li>
+                        <li>Validação automática de conclusão</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-category">
+                    <h3><i class="fas fa-chart-line"></i> Dashboard Financeiro</h3>
+                    <ul>
+                        <li>Resumo de valores por job</li>
+                        <li>Pagamentos de cleaners</li>
+                        <li>Cálculo automático de margem de lucro</li>
+                        <li>Filtros por período e status</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech" class="tech">
+        <div class="container">
+            <div class="section-header">
+                <h2>Requisitos Técnicos</h2>
+                <p>Stack tecnológico e integrações necessárias</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Plataforma</h3>
+                    <p><strong>Web app responsivo</strong></p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Tecnologia</h3>
+                    <p><strong>No Code (Bubble)</strong></p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3>Banco de Dados</h3>
+                    <p><strong>Supabase</strong></p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3>Segurança</h3>
+                    <p><strong>Criptografia e links temporários</strong></p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Performance</h3>
+                    <p><strong>Carregamento em até 3 segundos</strong></p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Idioma</h3>
+                    <p><strong>Português</strong> (único na v1)</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Capacidade</h3>
+                    <p>Suporte para até <strong>200 usuários simultâneos</strong></p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Autenticação</h3>
+                    <p><strong>Login seguro</strong> - e-mail e senha</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screens Section -->
+    <section id="screens" class="screens">
+        <div class="container">
+            <div class="section-header">
+                <h2>Fluxo Principal de Uso</h2>
+                <p>Processo completo de gestão de jobs de limpeza</p>
+            </div>
+            <div class="screens-grid">
+                <div class="screen-category">
+                    <h3>1. Fluxo do Administrador</h3>
+                    <ul>
+                        <li><strong>Login no painel</strong></li>
+                        <li><strong>Cadastra</strong> clientes, propriedades e cleaners</li>
+                        <li><strong>Cria jobs recorrentes</strong> com frequência e duração</li>
+                        <li><strong>Acompanha jobs</strong> disponíveis, reservados e realizados</li>
+                    </ul>
+                </div>
+                
+                <div class="screen-category">
+                    <h3>2. Geração Automática</h3>
+                    <ul>
+                        <li><strong>Jobs são gerados automaticamente</strong> baseado nas recorrências</li>
+                        <li><strong>Sistema lista jobs</strong> e os disponibiliza para cleaners</li>
+                    </ul>
+                </div>
+                
+                <div class="screen-category">
+                    <h3>3. Fluxo da Cleaner</h3>
+                    <ul>
+                        <li><strong>Login no painel pessoal</strong></li>
+                        <li><strong>Visualiza jobs disponíveis</strong> com data, local e valor</li>
+                        <li><strong>Seleciona e reserva jobs</strong> da semana</li>
+                    </ul>
+                </div>
+                
+                <div class="screen-category">
+                    <h3>4. Pré-Job</h3>
+                    <ul>
+                        <li><strong>Recebe link automático</strong> com dados do cliente 24h antes</li>
+                        <li><strong>Acessa informações sensíveis</strong> via link temporário seguro</li>
+                    </ul>
+                </div>
+                
+                <div class="screen-category">
+                    <h3>5. Execução</h3>
+                    <ul>
+                        <li><strong>Executa o job</strong> no local</li>
+                        <li><strong>Preenche formulário</strong> de confirmação com fotos e observações</li>
+                    </ul>
+                </div>
+                
+                <div class="screen-category">
+                    <h3>6. Pós-Job</h3>
+                    <ul>
+                        <li><strong>Job marcado como concluído</strong></li>
+                        <li><strong>Administração revisa</strong> e aprova o job</li>
+                    </ul>
+                </div>
+                
+                <div class="screen-category">
+                    <h3>7. Dashboard Financeiro</h3>
+                    <ul>
+                        <li><strong>Admin analisa dashboard</strong> com valores e margem</li>
+                        <li><strong>Marca pagamentos</strong> como concluídos</li>
+                    </ul>
+                </div>
+                
+                <div class="screen-category">
+                    <h3>8. Histórico</h3>
+                    <ul>
+                        <li><strong>Cleaner visualiza</strong> histórico de jobs e pagamentos</li>
+                        <li><strong>Admin acompanha</strong> histórico completo da operação</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="success-metrics">
+                <h3>Indicadores de Sucesso da v1</h3>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <h4>60% de redução</h4>
+                        <p>no tempo semanal gasto com agendamento manual</p>
+                    </div>
+                    <div class="metric-card">
+                        <h4>100% das cleaners</h4>
+                        <p>utilizando o painel semanalmente</p>
+                    </div>
+                    <div class="metric-card">
+                        <h4>Zero jobs duplicados</h4>
+                        <p>ou com dados incorretos em 30 dias</p>
+                    </div>
+                    <div class="metric-card">
+                        <h4>100% de precisão</h4>
+                        <p>nos cálculos de pagamento</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insights Section -->
+    <section class="insights">
+        <div class="container">
+            <div class="section-header">
+                <h2>Insights & Oportunidades</h2>
+                <p>Análise do mercado de software para empresas de limpeza</p>
+            </div>
+            
+            <div class="insights-grid">
+                <div class="insight-category">
+                    <div class="insight-header">
+                        <div class="insight-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>1. Padrões do Mercado</h3>
+                    </div>
+                    <div class="insight-content">
+                        <div class="insight-item">
+                            <h4>Agendamento recorrente + app de campo</h4>
+                            <p>Quase todos oferecem agendamento recorrente com app móvel para check-in/out, fotos e notas (Housecall Pro, Jobber, ZenMaid).</p>
+                        </div>
+                        <div class="insight-item">
+                            <h4>Foco em múltiplos trades</h4>
+                            <p>Soluções amplas atendem vários segmentos; as específicas de limpeza variam em custo e qualidade.</p>
+                        </div>
+                        <div class="insight-item">
+                            <h4>Baseline confirmado</h4>
+                            <p>O fluxo "Cleaner reserva/execução/relato com fotos" é esperado no mercado.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="insight-category">
+                    <div class="insight-header">
+                        <div class="insight-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>2. Gaps para PMEs</h3>
+                    </div>
+                    <div class="insight-content">
+                        <div class="insight-item">
+                            <h4>Custo elevado</h4>
+                            <p>MaidCentral inicia em US$450/mês. Há espaço para solução enxuta e acessível.</p>
+                        </div>
+                        <div class="insight-item">
+                            <h4>Complexidade desnecessária</h4>
+                            <p>Ecossistemas complexos dificultam adoção por pequenas empresas de limpeza residencial.</p>
+                        </div>
+                        <div class="insight-item">
+                            <h4>Autonomia da cleaner</h4>
+                            <p>Opt-in de jobs gerados com regras de elegibilidade simples é pouco explorado.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="insight-category full-width">
+                    <div class="insight-header">
+                        <div class="insight-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>3. Diferenciais Acionáveis do Impecare</h3>
+                    </div>
+                    <div class="differentials-grid">
+                        <div class="differential-card">
+                            <div class="differential-icon">
+                                <i class="fas fa-user-check"></i>
+                            </div>
+                            <h4>Autonomia da Cleaner</h4>
+                            <p>Opt-in de jobs gerados com regras de elegibilidade e rota simples, dando controle total à funcionária.</p>
+                        </div>
+                        <div class="differential-card">
+                            <div class="differential-icon">
+                                <i class="fas fa-chart-pie"></i>
+                            </div>
+                            <h4>Dashboard de Margem Nativo</h4>
+                            <p>Cálculo automático de margem por job, algo pouco evidenciado nos concorrentes de entrada.</p>
+                        </div>
+                        <div class="differential-card">
+                            <div class="differential-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>Segurança Operacional</h4>
+                            <p>Links com expiração de 24h e trilha de auditoria como padrão, priorizando dados sensíveis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Section -->
+    <section class="design">
+        <div class="container">
+            <div class="design-grid">
+                <div class="design-category">
+                    <div class="section-header">
+                        <h2>Identidade Visual</h2>
+                        <p>Logotipo e tipografia do Impecare</p>
+                    </div>
+                    <div class="logo-details">
+                        <div class="logo-item">
+                            <h4>Nome: Impecare</h4>
+                        </div>
+                        <div class="logo-item">
+                            <h4>Tipografia</h4>
+                            <p>Sem serifa, com traços limpos e modernos. Estilo leve, confiável e funcional.</p>
+                        </div>
+                        <div class="logo-item">
+                            <h4>Estilo Geral</h4>
+                            <p>Profissional, moderno e direto ao ponto, com toque de eficiência.</p>
+                        </div>
+                        <div class="logo-preview">
+                            <div class="logo-example">
+                                <img src="/impecare/impe_logo.jpeg" alt="Impecare Logo" style="max-width: 250px; height: auto;">
+                            </div>
+                            <p class="logo-description">Logotipo oficial do Impecare</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="design-category">
+                    <div class="section-header">
+                        <h2>Paleta de Cores do App</h2>
+                        <p>Sistema de cores estratégico</p>
+                    </div>
+                    <div class="color-palette">
+                        <div class="color-item">
+                            <div class="color-swatch" style="background-color: #2F80ED;"></div>
+                            <div class="color-info">
+                                <h4>Azul Confiança</h4>
+                                <p class="color-code">#2F80ED</p>
+                                <p class="color-usage">Cor primária - botões, ícones ativos, links</p>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <div class="color-swatch" style="background-color: #27AE60;"></div>
+                            <div class="color-info">
+                                <h4>Verde Operacional</h4>
+                                <p class="color-code">#27AE60</p>
+                                <p class="color-usage">Cor secundária - status concluído, confirmações, badges</p>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <div class="color-swatch" style="background-color: #F2F2F2; border: 2px solid #e2e8f0;"></div>
+                            <div class="color-info">
+                                <h4>Cinza Nuvem</h4>
+                                <p class="color-code">#F2F2F2</p>
+                                <p class="color-usage">Cor de fundo - telas, cards, áreas neutras</p>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <div class="color-swatch" style="background-color: #F2994A;"></div>
+                            <div class="color-info">
+                                <h4>Laranja Aviso</h4>
+                                <p class="color-code">#F2994A</p>
+                                <p class="color-usage">Cor de destaque - alertas, jobs pendentes, botões de atenção</p>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <div class="color-swatch" style="background-color: #333333;"></div>
+                            <div class="color-info">
+                                <h4>Preto Suave</h4>
+                                <p class="color-code">#333333</p>
+                                <p class="color-usage">Cor de texto - títulos, parágrafos, menus</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Section -->
+    <section class="investment">
+        <div class="container">
+            <div class="section-header">
+                <h2>O Investimento</h2>
+            </div>
+            
+            <div class="investment-plans">
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Complete Version</h3>
+                        <div class="plan-price">
+                            <span class="price-value">R$ 23.249,00</span>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="feature-item">
+                            <h4>Valor de desenvolvimento</h4>
+                            <p>Pode ser pago semanalmente</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plan-card featured">
+                    <div class="plan-header">
+                        <h3>Partner Version</h3>
+                        <div class="plan-price">
+                            <span class="price-value">R$ 6.974,70</span>
+                        </div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="feature-item">
+                            <h4>Modelo de parceria</h4>
+                            <p>Fico como responsável técnico, juntamente com um valor reduzido em troca de 30% de participação sobre o sistema. Menos custo agora, mais crescimento compartilhado depois.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="/impecare/impe_logo.jpeg" alt="Impecare Logo" class="logo-img">
+                </div>
+                <div class="footer-links">
+                    <a href="#overview">Visão Geral</a>
+                    <a href="#features">Funcionalidades</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://instagram.com/devnoflow" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/5551994408307" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Development Portfolio. Impecare - Sistema de Gestão de Limpeza.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/impecare/script.js"></script>
+</body>
+</html>
