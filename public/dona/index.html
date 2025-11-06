@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dona do Meu Destino - App de Empoderamento para Mulheres Motoristas</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="./dnf.png" alt="DNF Logo" class="logo-img">
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Projeto</a>
+                <a href="#overview" class="nav-link">Visão Geral</a>
+                <a href="#features" class="nav-link">Funcionalidades</a>
+                <a href="#tech" class="nav-link">Tecnologias</a>
+                <a href="#screens" class="nav-link">Telas</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    💁‍♀️ Dona do Meu Destino
+                </h1>
+                <p class="hero-description">
+                    App criado para empoderar mulheres motoristas, oferecendo autonomia, segurança e conhecimento prático sobre o cuidado com o carro. A plataforma combina controle financeiro, lembretes automáticos, dicas de mecânica e uma comunidade de apoio.
+                </p>
+            </div>
+            <div class="hero-image">
+                <div class="project-showcase">
+                    <div class="showcase-card">
+                        <div class="showcase-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>PWA Completo</h3>
+                        <p>Desenvolvimento No Code com Bubble</p>
+                    </div>
+                    <div class="showcase-card">
+                        <div class="showcase-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>1.000 Usuárias</h3>
+                        <p>Meta para usuárias ativas simultâneas</p>
+                    </div>
+                    <div class="showcase-card">
+                        <div class="showcase-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>100+ Cadastros</h3>
+                        <p>Meta para as primeiras 4 semanas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-particles"></div>
+    </section>
+
+    <!-- Overview Section -->
+    <section id="overview" class="overview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visão Geral do Projeto</h2>
+                <p>Dona do Meu Destino - App de Empoderamento para Mulheres Motoristas</p>
+            </div>
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h3>O Dona do Meu Destino é um app criado para empoderar mulheres motoristas</h3>
+                    <p>Oferecendo autonomia, segurança e conhecimento prático sobre o cuidado com o carro. A plataforma combina controle financeiro, lembretes automáticos, dicas de mecânica e uma comunidade de apoio, ajudando as usuárias a evitarem gastos desnecessários e dependência de terceiros.</p>
+                    
+                    <p>A proposta é transformar a experiência de dirigir e cuidar do carro em um ato de autoconfiança e independência. O app serve como companheiro digital para quem quer aprender, se organizar e tomar decisões com segurança.</p>
+                    
+                    <p><strong>O momento é oportuno: cresce o número de mulheres dirigindo e o interesse por iniciativas de educação automotiva e financeira feminina, reforçando a relevância social e de mercado do projeto.</strong></p>
+                </div>
+                <div class="overview-stats">
+                    <div class="stat-card">
+                        <h4>Objetivos da v1</h4>
+                        <ul>
+                            <li>Validar o interesse do público feminino em um app que une controle automotivo e comunidade</li>
+                            <li>Permitir o registro e acompanhamento de despesas e manutenções</li>
+                            <li>Testar engajamento com o chat de IA automotiva (FAQ e dicas práticas)</li>
+                            <li>Medir a adesão aos lembretes automáticos via app e WhatsApp</li>
+                            <li>Coletar feedback sobre usabilidade e percepção de confiança da plataforma</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personas Section -->
+    <section class="personas-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Personas Prioritárias</h2>
+                <p>Conheça o perfil das usuárias do Dona do Meu Destino</p>
+            </div>
+            <div class="personas-grid">
+                <div class="persona-card">
+                    <h4>Mulheres de 25 a 45 anos</h4>
+                    <p>Com carro próprio e rotina ativa (trabalho, estudos, filhos).</p>
+                </div>
+                <div class="persona-card">
+                    <h4>Buscam Independência</h4>
+                    <p>Que desejam cuidar melhor do veículo sem depender de terceiros.</p>
+                </div>
+                <div class="persona-card">
+                    <h4>Querem Aprender</h4>
+                    <p>Buscam aprender manutenção automotiva de forma simples e descomplicada, valorizando praticidade, segurança e pertencimento a uma comunidade feminina.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Funcionalidades Essenciais (MVP)</h2>
+                <p>Todas as funcionalidades planejadas para a primeira versão</p>
+            </div>
+            <div class="features-categories">
+                <div class="feature-category">
+                    <h3><i class="fas fa-user-plus"></i> Cadastro/Login de Usuária</h3>
+                    <ul>
+                        <li>Via e-mail, Google ou WhatsApp</li>
+                        <li>Verificação básica de conta</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-category">
+                    <h3><i class="fas fa-user-circle"></i> Perfil Pessoal</h3>
+                    <ul>
+                        <li>Nome, modelo e ano do carro, quilometragem, cidade</li>
+                        <li>Informações do veículo para personalização</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-category">
+                    <h3><i class="fas fa-chart-line"></i> Controle de Manutenção e Despesas</h3>
+                    <ul>
+                        <li>Registrar abastecimentos, revisões e serviços</li>
+                        <li>Histórico completo de gastos automotivos</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-category">
+                    <h3><i class="fas fa-bell"></i> Lembretes Automáticos</h3>
+                    <ul>
+                        <li>Baseados em data ou quilometragem</li>
+                        <li>Envio por app e WhatsApp</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-category">
+                    <h3><i class="fas fa-robot"></i> Chat com IA Automotiva</h3>
+                    <ul>
+                        <li>Tira-dúvidas sobre manutenção, segurança e custos</li>
+                        <li>Dicas rápidas e práticas</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-category">
+                    <h3><i class="fas fa-users"></i> Comunidade Feminina</h3>
+                    <ul>
+                        <li>Feed simples para compartilhar experiências</li>
+                        <li>Posts, comentários e dicas entre usuárias</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-category">
+                    <h3><i class="fas fa-search"></i> Busca de Serviços Automotivos</h3>
+                    <ul>
+                        <li>Filtro por categoria (mecânica, elétrica, funilaria, lava-rápido)</li>
+                        <li>Busca por distância e localização</li>
+                    </ul>
+                </div>
+                
+                <div class="feature-category">
+                    <h3><i class="fas fa-cog"></i> Painel Administrativo</h3>
+                    <ul>
+                        <li>Moderação de posts e denúncias</li>
+                        <li>Gestão de serviços indicados</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech" class="tech">
+        <div class="container">
+            <div class="section-header">
+                <h2>Requisitos Não-Funcionais</h2>
+                <p>Stack tecnológica e especificações do projeto</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Plataforma</h3>
+                    <p><strong>PWA (Progressive Web App)</strong> mobile-first, com versão web responsiva</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Ferramenta</h3>
+                    <p><strong>Bubble</strong> (No Code)</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Integrações</h3>
+                    <p><strong>API do WhatsApp</strong> (Twilio ou Evolution) para lembretes + <strong>GPT</strong> para chat de IA automotiva</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Banco de Dados</h3>
+                    <p>Interno da ferramenta (Bubble+Supabase)</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Idiomas</h3>
+                    <p><strong>Português</strong> (v1)</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Capacidade</h3>
+                    <p>Até <strong>1.000 usuárias ativas</strong> simultâneas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screens Section -->
+    <section id="screens" class="screens">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mapa de Telas</h2>
+                <p>Todas as telas planejadas para o aplicativo</p>
+            </div>
+            <div class="screens-grid">
+                <div class="screen-category">
+                    <h3>Autenticação</h3>
+                    <ul>
+                        <li><strong>Tela de Boas-vindas</strong> – Apresenta o app e direciona para cadastro ou login</li>
+                        <li><strong>Tela de Cadastro/Login</strong> – Permite autenticação via e-mail, Google ou WhatsApp</li>
+                        <li><strong>Tela de Completar Perfil</strong> – Coleta dados pessoais e do veículo</li>
+                    </ul>
+                </div>
+                
+                <div class="screen-category">
+                    <h3>Core do App</h3>
+                    <ul>
+                        <li><strong>Tela Inicial (Dashboard)</strong> – Exibe resumo financeiro, lembretes e atalhos principais</li>
+                        <li><strong>Tela de Controle de Despesas/Manutenção</strong> – Permite registrar e visualizar abastecimentos, revisões e serviços</li>
+                        <li><strong>Tela de Detalhe de Registro</strong> – Mostra informações completas de uma despesa ou manutenção</li>
+                    </ul>
+                </div>
+                
+                <div class="screen-category">
+                    <h3>Funcionalidades Principais</h3>
+                    <ul>
+                        <li><strong>Tela de Lembretes</strong> – Lista e gerencia lembretes automáticos</li>
+                        <li><strong>Tela do Chat de IA Automotiva</strong> – Interface de conversa com IA</li>
+                        <li><strong>Tela da Comunidade Feminina</strong> – Feed de posts e comentários entre usuárias</li>
+                        <li><strong>Tela de Novo Post</strong> – Permite criar uma nova publicação no feed</li>
+                    </ul>
+                </div>
+                
+                <div class="screen-category">
+                    <h3>Serviços e Busca</h3>
+                    <ul>
+                        <li><strong>Tela de Serviços Automotivos</strong> – Busca e lista oficinas e prestadores próximos</li>
+                    </ul>
+                </div>
+                
+                <div class="screen-category">
+                    <h3>Perfil e Configurações</h3>
+                    <ul>
+                        <li><strong>Tela de Perfil da Usuária</strong> – Permite editar informações pessoais e do carro</li>
+                    </ul>
+                </div>
+                
+                <div class="screen-category">
+                    <h3>Administração</h3>
+                    <ul>
+                        <li><strong>Tela Administrativa</strong> – Moderação de posts e gestão de serviços indicados (somente moderadoras)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="success-metrics">
+                <h3>Indicadores de Sucesso da v1</h3>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <h4>100 usuárias cadastradas</h4>
+                        <p>nas primeiras 4 semanas</p>
+                    </div>
+                    <div class="metric-card">
+                        <h4>70% registraram</h4>
+                        <p>ao menos uma manutenção ou despesa</p>
+                    </div>
+                    <div class="metric-card">
+                        <h4>20 interações semanais</h4>
+                        <p>na comunidade (posts ou comentários)</p>
+                    </div>
+                    <div class="metric-card">
+                        <h4>Feedback ≥ 8/10</h4>
+                        <p>sobre o chat de IA e facilidade de uso</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insights Section -->
+    <section class="insights">
+        <div class="container">
+            <div class="section-header">
+                <h2>Insights & Oportunidades</h2>
+                <p>Análise do mercado e posicionamento estratégico</p>
+            </div>
+            
+            <div class="insights-grid">
+                <div class="insight-category">
+                    <div class="insight-header">
+                        <div class="insight-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>1. Funcionalidades Comuns no Mercado</h3>
+                    </div>
+                    <div class="insight-content">
+                        <div class="insight-item">
+                            <h4>Registro de Manutenção</h4>
+                            <p>Registro de manutenção/serviços/despesas automotivas (Simply Auto, MyCar, Car AI).</p>
+                        </div>
+                        <div class="insight-item">
+                            <h4>Lembretes Automáticos</h4>
+                            <p>Lembretes automáticos com base em tempo ou quilometragem (Car AI, Car‑Care apps).</p>
+                        </div>
+                        <div class="insight-item">
+                            <h4>Consulta de Serviços</h4>
+                            <p>Consulta ou agendamento de serviços em oficinas com transparência de preço (Openbay).</p>
+                        </div>
+                        <div class="insight-item">
+                            <h4>Educação Feminina</h4>
+                            <p>Educação e comunidade voltadas para mulheres motoristas (Women Auto Know).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="insight-category">
+                    <div class="insight-header">
+                        <div class="insight-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>2. Gaps Percebidos no Mercado</h3>
+                    </div>
+                    <div class="insight-content">
+                        <div class="insight-item">
+                            <h4>Falta de Integração Completa</h4>
+                            <p>Poucos apps combinam registro de manutenção + comunidade de mulheres + IA de dúvidas automotivas no mesmo produto.</p>
+                        </div>
+                        <div class="insight-item">
+                            <h4>Integração com Mensageria</h4>
+                            <p>Integração com canais de mensageria externos (como WhatsApp para lembretes) é raramente destacada.</p>
+                        </div>
+                        <div class="insight-item">
+                            <h4>Foco no Empoderamento Feminino</h4>
+                            <p>Foco específico no empoderamento feminino no contexto automotivo ainda parece subexplorado.</p>
+                        </div>
+                        <div class="insight-item">
+                            <h4>PWA com Comunidade</h4>
+                            <p>Versão PWA/mobile‑first com comunidade + registro + IA ainda não aparece claramente entre os apps pesquisados.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="insight-category full-width">
+                    <div class="insight-header">
+                        <div class="insight-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>3. Diferenciais que o Dona do Meu Destino Explora</h3>
+                    </div>
+                    <div class="differentials-grid">
+                        <div class="differential-card">
+                            <div class="differential-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>Comunidade Feminina Segmentada</h4>
+                            <p>Criar uma comunidade feminina segmentada por motoristas, com feed de experiências, comentários, participação ativa — ao lado das funcionalidades de registro automotivo.</p>
+                        </div>
+                        <div class="differential-card">
+                            <div class="differential-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h4>IA Automotiva Simplificada</h4>
+                            <p>Incluir chat de IA automotiva focado em linguagem simples, direcionado para mulheres iniciantes ou que evitam jargão técnico.</p>
+                        </div>
+                        <div class="differential-card">
+                            <div class="differential-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h4>Lembretes Personalizados via WhatsApp</h4>
+                            <p>Enviar lembretes personalizados via WhatsApp ou similar (aliança entre app + mensageria) para aumentar engajamento.</p>
+                        </div>
+                        <div class="differential-card">
+                            <div class="differential-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>Transparência e Confiança</h4>
+                            <p>Mostrar transparência e confiança — guias para oficinas "amigas das mulheres", ou checklist para visitas seguras — para responder à necessidade de menor dependência de mecânicos e maior autonomia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Section -->
+    <section class="design">
+        <div class="container">
+            <div class="design-grid">
+                <div class="design-category">
+                    <div class="section-header">
+                        <h2>Logotipo Conceitual</h2>
+                        <p>Identidade visual do Dona do Meu Destino</p>
+                    </div>
+                    <div class="logo-details">
+                        <div class="logo-item">
+                            <h4>Nome: Dona do Meu Destino</h4>
+                        </div>
+                        <div class="logo-item">
+                            <h4>Tipografia</h4>
+                            <p>Suave com presença — sem serifa, com curvas leves e traço firme (fonte manuscrita moderna ou script elegante, mas legível).</p>
+                        </div>
+                        <div class="logo-item">
+                            <h4>Ícone complementar</h4>
+                            <p>Volante estilizado com uma coroa delicada no topo (símbolo de direção + protagonismo feminino).</p>
+                        </div>
+                        <div class="logo-item">
+                            <h4>Estilo geral</h4>
+                            <p>Inspirador, feminino e empoderador, com ar moderno e acessível.</p>
+                        </div>
+                        <div class="logo-preview">
+                            <div class="logo-example">
+                                <img src="./logo.png" alt="Dona do Meu Destino Logo" class="faith-logo">
+                            </div>
+                            <p class="logo-description">Logotipo oficial do Dona do Meu Destino</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="design-category">
+                    <div class="section-header">
+                        <h2>Paleta de Cores do App</h2>
+                        <p>Sistema cromático estratégico</p>
+                    </div>
+                    <div class="color-palette">
+                        <div class="color-item">
+                            <div class="color-swatch" style="background-color: #D958A5;"></div>
+                            <div class="color-info">
+                                <h4>Rosa Confiança</h4>
+                                <p class="color-code">#D958A5</p>
+                                <p class="color-usage">Botões principais, chamadas à ação e ícones de destaque</p>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <div class="color-swatch" style="background-color: #B28DFF;"></div>
+                            <div class="color-info">
+                                <h4>Lilás Horizonte</h4>
+                                <p class="color-code">#B28DFF</p>
+                                <p class="color-usage">Elementos secundários, bordas suaves e fundo de cards informativos</p>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <div class="color-swatch" style="background-color: #FAF8F6; border: 2px solid #e2e8f0;"></div>
+                            <div class="color-info">
+                                <h4>Creme Neve</h4>
+                                <p class="color-code">#FAF8F6</p>
+                                <p class="color-usage">Cor de fundo principal das telas. Limpa, clara e acolhedora</p>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <div class="color-swatch" style="background-color: #FECF4D;"></div>
+                            <div class="color-info">
+                                <h4>Amarelo Farol</h4>
+                                <p class="color-code">#FECF4D</p>
+                                <p class="color-usage">Para alertas leves, lembretes e pontos de atenção amigáveis</p>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <div class="color-swatch" style="background-color: #333333;"></div>
+                            <div class="color-info">
+                                <h4>Cinza Motor</h4>
+                                <p class="color-code">#333333</p>
+                                <p class="color-usage">Para títulos, textos principais e menus. Contraste forte e fácil leitura</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Section -->
+    <section class="insights">
+        <div class="container">
+            <div class="section-header">
+                <h2>O Investimento</h2>
+                <p>Transforme sua ideia em realidade com experiência comprovada</p>
+            </div>
+            
+            <div class="insights-grid" style="display: flex; justify-content: center;">
+                <div class="insight-category" style="max-width: 800px; width: 100%;">
+                    <div class="insight-header">
+                        <div class="insight-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Detalhamento do Investimento</h3>
+                    </div>
+                    <div class="insight-content">
+                        <!-- Você leva -->
+                        <div style="margin-bottom: 30px;">
+                            <h3 style="color: #D958A5; margin-bottom: 15px;"><i class="fas fa-gift"></i> Você leva:</h3>
+                            <div class="insight-item">
+                                <h4>Todo o projeto completo descrito acima</h4>
+                            </div>
+                            <div class="insight-item">
+                                <h4>Uma estrutura pensada pra crescer, escalar e atrair investimento</h4>
+                            </div>
+                            <div class="insight-item">
+                                <h4>Alguém com experiência real em transformar ideias em realidade</h4>
+                            </div>
+                        </div>
+
+                        <!-- Desenvolvimento Base -->
+                        <div style="margin-bottom: 30px; padding-top: 20px; border-top: 2px solid #f0f0f0;">
+                            <h3 style="color: #D958A5; margin-bottom: 15px;"><i class="fas fa-code"></i> Desenvolvimento Base</h3>
+                            <div class="insight-item">
+                                <h4>Desenvolvimento completo do app</h4>
+                                <p style="font-size: 1.2rem; color: #D958A5; font-weight: bold;">R$ 76.900</p>
+                            </div>
+                        </div>
+
+                        <!-- Módulos Complementares -->
+                        <div style="padding-top: 20px; border-top: 2px solid #f0f0f0;">
+                            <h3 style="color: #D958A5; margin-bottom: 15px;"><i class="fas fa-puzzle-piece"></i> Módulos Complementares</h3>
+                            <div class="insight-item">
+                                <h4>Treinamento da IA automotiva</h4>
+                                <p style="font-size: 1.1rem; color: #666;">R$ 5.900</p>
+                            </div>
+                            <div class="insight-item">
+                                <h4>1 ano de Automação do WhatsApp</h4>
+                                <p style="font-size: 1.1rem; color: #666;">R$ 1.188</p>
+                            </div>
+                            <div class="insight-item">
+                                <h4>Gamificação inteligente</h4>
+                                <p style="font-size: 1.1rem; color: #666;">R$ 27.000</p>
+                            </div>
+                            <div class="insight-item">
+                                <h4>Painel de métricas estratégicas</h4>
+                                <p style="font-size: 1.1rem; color: #666;">R$ 18.497</p>
+                            </div>
+                            <div class="insight-item">
+                                <h4>3 meses de acompanhamento pós-entrega (60h)</h4>
+                                <p style="font-size: 1.1rem; color: #666;">R$ 10.410</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-total" style="margin-top: 50px; text-align: center;">
+                <div id="price-display" style="max-width: 700px; margin: 0 auto;">
+                    <div id="total-price" class="price-stage active" style="background: white; padding: 40px; border-radius: 15px; display: block; box-shadow: 0 5px 15px rgba(0,0,0,0.1); width: 700px; max-width: 700px;">
+                        <h3 style="margin-bottom: 20px; font-size: 1.8rem;">Valor Total do Projeto</h3>
+                        <div class="total-value" style="font-size: 3rem; font-weight: bold; color: #D958A5; margin: 20px 0;">R$ 139.895</div>
+                        <button class="reveal-btn" onclick="showIndicacao()" style="background: linear-gradient(45deg, #D958A5, #B28DFF); color: white; border: none; padding: 15px 40px; border-radius: 30px; font-size: 1.1rem; cursor: pointer; transition: transform 0.3s ease;">
+                            <span>Revelar condição especial</span>
+                            <i class="fas fa-arrow-down"></i>
+                        </button>
+                    </div>
+
+                    <div id="indicacao-price" class="price-stage" style="background: white; padding: 40px; border-radius: 15px; display: none; box-shadow: 0 5px 15px rgba(0,0,0,0.1); width: 700px; max-width: 700px;">
+                        <h3 style="margin-bottom: 20px; font-size: 1.8rem;">🎁 Por ser de indicação</h3>
+                        <div style="text-decoration: line-through; color: #999; font-size: 1.3rem;">De: R$ 139.895</div>
+                        <div class="special-value" style="font-size: 3rem; font-weight: bold; color: #D958A5; margin: 20px 0;">R$ 110.000</div>
+                        <button class="reveal-btn" onclick="showBonus()" style="background: linear-gradient(45deg, #D958A5, #B28DFF); color: white; border: none; padding: 15px 40px; border-radius: 30px; font-size: 1.1rem; cursor: pointer; transition: transform 0.3s ease;">
+                            <span>Ver condição bônus</span>
+                            <i class="fas fa-gift"></i>
+                        </button>
+                    </div>
+
+                    <div id="bonus-price" class="price-stage" style="background: white; padding: 40px; border-radius: 15px; display: none; box-shadow: 0 5px 15px rgba(0,0,0,0.1); width: 700px; max-width: 700px;">
+                        <h3 style="margin-bottom: 20px; font-size: 1.8rem;">🔥 Condição Bônus Exclusiva</h3>
+                        <p style="margin: 20px auto; font-size: 1.1rem; line-height: 1.6;">Como estou finalizando minha agenda desta semana e realmente quero priorizar projetos com propósito, quero aplicar uma <strong>condição exclusiva de fechamento</strong></p>
+                        <div style="display: flex; justify-content: center; align-items: center; gap: 30px; margin: 30px 0; flex-wrap: wrap;">
+                            <div style="background: #f8f9fa; padding: 20px 30px; border-radius: 15px; text-align: center;">
+                                <span style="display: block; color: #666; margin-bottom: 10px;">Entrada</span>
+                                <span style="display: block; font-size: 1.8rem; font-weight: bold; color: #D958A5;">R$ 10.000</span>
+                            </div>
+                            <div style="font-size: 2rem; color: #B28DFF; font-weight: bold;">+</div>
+                            <div style="background: #f8f9fa; padding: 20px 30px; border-radius: 15px; text-align: center;">
+                                <span style="display: block; color: #666; margin-bottom: 10px;">Parcelas</span>
+                                <span style="display: block; font-size: 1.8rem; font-weight: bold; color: #D958A5;">10x de R$ 7.900</span>
+                            </div>
+                        </div>
+                        <div style="margin: 30px auto; padding: 20px; background: linear-gradient(45deg, #D958A5, #B28DFF); color: white; border-radius: 15px; display: flex; justify-content: space-between; align-items: center;">
+                            <span>Total com condição bônus:</span>
+                            <span style="font-size: 2rem; font-weight: bold;">R$ 89.000</span>
+                        </div>
+                        <p style="color: #666; font-style: italic; margin-top: 10px;">* Mantendo todos os módulos e bônus inclusos</p>
+                        <button style="background: linear-gradient(45deg, #4CAF50, #45a049); color: white; border: none; padding: 20px 50px; border-radius: 30px; font-size: 1.2rem; font-weight: bold; cursor: pointer; transition: all 0.3s ease; margin-top: 20px;">
+                            <span>Bora garantir sua vaga?</span>
+                            <i class="fas fa-rocket"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showIndicacao() {
+            document.getElementById('total-price').style.display = 'none';
+            document.getElementById('indicacao-price').style.display = 'inline-block';
+        }
+
+        function showBonus() {
+            document.getElementById('indicacao-price').style.display = 'none';
+            document.getElementById('bonus-price').style.display = 'inline-block';
+        }
+    </script>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="/faith-match/dnf.png" alt="DNF Logo" class="logo-img">
+                </div>
+                <div class="footer-links">
+                    <a href="#overview">Projeto</a>
+                    <a href="#features">Funcionalidades</a>
+                    <a href="#tech">Tecnologias</a>
+                    <a href="#screens">Telas</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Portfólio de Desenvolvimento. Projeto Dona do Meu Destino disponível para implementação.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
